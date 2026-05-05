@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Unofficial prototype event map demo for Columbus Underground event listings.">
+    <title>Columbus Underground Event Map Demo</title>
+    <link rel="preconnect" href="https://tile.openstreetmap.org">
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=1.9.4">
+    <link rel="stylesheet" href="styles.css?v=202605011918">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel" aria-label="Event filters and list">
+        <header class="masthead">
+          <p class="eyebrow">Unofficial prototype</p>
+          <h1>Columbus Underground Event Map</h1>
+          <p class="lede">Explore public CU event listings by date, category, keyword, and downtown proximity. This demo is not affiliated with or endorsed by Columbus Underground.</p>
+        </header>
+
+        <form class="filters" id="filters">
+          <label class="field field-search">
+            <span>Search</span>
+            <input id="searchInput" name="search" type="search" autocomplete="off" placeholder="Title, venue, address">
+          </label>
+
+          <fieldset class="field category-field">
+            <legend>Categories</legend>
+            <div class="category-summary" id="categorySummary">All categories</div>
+            <div class="category-options" id="categoryOptions" aria-label="Categories"></div>
+          </fieldset>
+
+          <div class="date-grid" aria-label="Date range">
+            <label class="field date-field">
+              <span>Start date</span>
+              <span class="date-control">
+                <input id="startDate" name="start" type="text" inputmode="numeric" autocomplete="off" placeholder="YYYY-MM-DD" aria-haspopup="dialog" aria-expanded="false" aria-describedby="dateDefaultNote">
+              </span>
+            </label>
+            <label class="field date-field">
+              <span>End date</span>
+              <span class="date-control">
+                <input id="endDate" name="end" type="text" inputmode="numeric" autocomplete="off" placeholder="YYYY-MM-DD" aria-haspopup="dialog" aria-expanded="false">
+              </span>
+            </label>
+          </div>
+
+          <label class="toggle-row">
+            <input id="downtownToggle" type="checkbox">
+            <span class="toggle-ui" aria-hidden="true"></span>
+            <span>
+              <strong>Near downtown</strong>
+              <small>Within 2 miles of Broad &amp; High</small>
+            </span>
+          </label>
+
+          <p class="filter-note" id="dateDefaultNote">Default view starts at today. Clear the start date to inspect older listings.</p>
+
+          <div class="filter-actions">
+            <button class="button button-primary" type="submit">Search</button>
+            <button class="button button-ghost" id="resetButton" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <section class="status-strip" aria-live="polite">
+          <strong id="resultCount">0 events</strong>
+          <span id="dataStamp">Loading data...</span>
+        </section>
+
+        <section class="event-list" id="eventList" aria-label="Filtered events"></section>
+      </section>
+
+      <section class="map-wrap" aria-label="Interactive event map">
+        <div id="map"></div>
+        <div class="map-toolbar" aria-live="polite">
+          <span id="mappedCount">0 mapped</span>
+          <span id="unmappedCount">0 unmapped</span>
+        </div>
+      </section>
+    </main>
+
+    <template id="eventCardTemplate">
+      <article class="event-card">
+        <button class="event-card-main" type="button">
+          <span class="event-date"></span>
+          <span class="event-body">
+            <strong class="event-title"></strong>
+            <span class="event-meta"></span>
+            <span class="event-location"></span>
+            <span class="event-tags"></span>
+          </span>
+        </button>
+        <a class="event-link" target="_blank" rel="noreferrer">View</a>
+      </article>
+    </template>
+
+    <script src="vendor/leaflet/leaflet.js?v=1.9.4"></script>
+    <script src="app.js?v=202605011913" type="module"></script>
+  </body>
+</html>
