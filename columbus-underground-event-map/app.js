@@ -113,7 +113,7 @@ async function init() {
     const payload = await response.json();
     state.events = normalizeEvents(payload.events || []);
     els.dataStamp.textContent = payload.generatedAt
-      ? `Updated ${formatDateTime(payload.generatedAt)}${payload.sourceMode ? ` via ${formatSourceMode(payload.sourceMode)}` : ""}`
+      ? `Updated ${formatDateTime(payload.generatedAt)}`
       : "Snapshot loaded";
     render();
   } catch (error) {
@@ -760,10 +760,6 @@ function isValidIsoDate(value) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
   const date = parseLocalDate(value);
   return !Number.isNaN(date.getTime()) && toIsoDate(date) === value;
-}
-
-function formatSourceMode(value) {
-  return String(value).replace(/-/g, " ");
 }
 
 function parseLocalDate(value) {
