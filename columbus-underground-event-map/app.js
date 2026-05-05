@@ -30,6 +30,7 @@ const DOWNTOWN_CENTER = [39.9612, -82.9988];
 const DOWNTOWN_RADIUS_MILES = 2;
 const METERS_PER_MILE = 1609.344;
 const COLUMBUS_CENTER = [39.9711, -82.9988];
+const MAP_MAX_BOUNDS = L.latLngBounds([39.56, -83.46], [40.34, -82.48]);
 const DEFAULT_START_DATE = toIsoDate(new Date());
 const PRETEXT_IMPORT = "./vendor/pretext/dist/layout.js";
 const PRETEXT_DEFAULT_SELECTOR = ".category-options [data-pretext], .leaflet-popup [data-pretext]";
@@ -85,12 +86,19 @@ const els = {
 
 const map = L.map("map", {
   zoomControl: false,
-  scrollWheelZoom: true
+  scrollWheelZoom: true,
+  minZoom: 10,
+  maxZoom: 18,
+  maxBounds: MAP_MAX_BOUNDS,
+  maxBoundsViscosity: 0.9
 }).setView(COLUMBUS_CENTER, 12);
 
 L.control.zoom({ position: "bottomright" }).addTo(map);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
+  maxZoom: 18,
+  minZoom: 10,
+  bounds: MAP_MAX_BOUNDS,
+  noWrap: true,
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
