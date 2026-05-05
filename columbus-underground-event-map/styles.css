@@ -630,6 +630,28 @@ h1 {
   min-height: 0;
   padding: 12px;
   overflow: auto;
+  scrollbar-color: var(--accent) oklch(89% 0.024 246);
+  scrollbar-gutter: stable;
+  scrollbar-width: auto;
+}
+
+.event-list::-webkit-scrollbar {
+  width: 14px;
+}
+
+.event-list::-webkit-scrollbar-track {
+  border-left: 1px solid var(--line);
+  background: oklch(89% 0.024 246);
+}
+
+.event-list::-webkit-scrollbar-thumb {
+  border: 3px solid oklch(89% 0.024 246);
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.event-list::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dark);
 }
 
 .event-card {
