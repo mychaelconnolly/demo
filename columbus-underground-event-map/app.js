@@ -79,6 +79,7 @@ const els = {
   mappedCount: document.querySelector("#mappedCount"),
   unmappedCount: document.querySelector("#unmappedCount"),
   eventList: document.querySelector("#eventList"),
+  eventScrollHint: document.querySelector(".event-scroll-hint"),
   template: document.querySelector("#eventCardTemplate")
 };
 
@@ -164,6 +165,8 @@ function bindEvents() {
     readFilters();
     scheduleRender();
   });
+
+  els.eventList.addEventListener("scroll", updateEventScrollHint);
 
   els.categoryOptions.addEventListener("click", (event) => {
     const option = event.target.closest(".category-option");
@@ -407,6 +410,27 @@ function render() {
   renderDowntownRange();
   updateMapView(venueGroups);
   renderList(filtered, groupsByEventId);
+  updateEventScrollHint();
+}
+
+function updateEventScrollHint() {
+  const hint = els.eventScrollHint;
+  if (!hint) return;
+  const thumb = hint.querySelector("span");
+  const maxScroll = els.eventList.scrollHeight - els.eventList.clientHeight;
+  const canScroll = maxScroll > 4;
+  hint.classList.toggle("is-visible", canScroll);
+  if (!canScroll) {
+    thumb.style.height = "100%";
+    thumb.style.transform = "translateY(0)";
+    return;
+  }
+  const trackHeight = hint.clientHeight || 1;
+  const thumbHeight = Math.max(42, Math.round((els.eventList.clientHeight / els.eventList.scrollHeight) * trackHeight));
+  const travel = Math.max(0, trackHeight - thumbHeight);
+  const offset = Math.round((els.eventList.scrollTop / maxScroll) * travel);
+  thumb.style.height = `${thumbHeight}px`;
+  thumb.style.transform = `translateY(${offset}px)`;
 }
 
 function matchesFilters(event) {
