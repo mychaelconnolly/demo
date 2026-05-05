@@ -146,10 +146,10 @@ h2 {
 
 .demo-copy strong {
   max-width: 16ch;
-  font-size: clamp(2rem, 4.6vw, 4.7rem);
+  font-size: clamp(2rem, 4.2vw, 4.25rem);
   font-weight: 900;
   letter-spacing: 0;
-  line-height: 0.92;
+  line-height: 1.05;
 }
 
 .demo-copy span:last-child {
@@ -187,4 +187,3 @@ h2 {
     transition: none;
   }
 }
-
