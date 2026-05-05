@@ -1,11 +1,18 @@
-# demo.michaelconnolly.tech
+# demo
 
-Static demo index for prototypes hosted at `demo.michaelconnolly.tech`.
+Static demo hub for prototypes hosted at <https://demo.michaelconnolly.tech/>.
 
-## Live Site
+## Demo Apps
 
-- Demo index: <https://demo.michaelconnolly.tech/>
-- Columbus Underground Event Map prototype: <https://demo.michaelconnolly.tech/columbus-underground-event-map/>
+- `columbus-underground-event-map/` - unofficial static Columbus Underground Event Map prototype.
+
+## Requirements
+
+- Static file hosting from the repository root; no build step is required.
+- Keep `.nojekyll`, `CNAME`, `favicon.png`, `assets/`, and each demo app directory committed.
+- The event map requires `columbus-underground-event-map/data/events.json`, the vendored Leaflet files, and the vendored Pretext files.
+- The event map loads map tiles from `https://tile.openstreetmap.org`.
+- Event links point to public Columbus Underground pages. Event data is a committed snapshot, not a live fetch.
 
 ## Local Preview
 
@@ -14,14 +21,3 @@ python3 -m http.server 4180
 ```
 
 Open `http://127.0.0.1:4180/`.
-
-## Publishing Status
-
-Published from the public GitHub repository `mychaelconnolly/demo`.
-
-- GitHub Pages source: `main` branch, repository root
-- Custom domain: `demo.michaelconnolly.tech`
-- HTTPS enforcement: enabled
-- Favicon: shared with `michaelconnolly.tech`
-
-The Columbus Underground Event Map prototype is an unofficial static demo using a committed event-data snapshot.
