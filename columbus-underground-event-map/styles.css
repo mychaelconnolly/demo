@@ -636,28 +636,26 @@ h1 {
   min-height: 0;
   padding: 12px 26px 12px 12px;
   overflow: auto;
-  scrollbar-color: var(--accent) oklch(89% 0.024 246);
+  scrollbar-color: transparent transparent;
   scrollbar-gutter: stable;
-  scrollbar-width: auto;
+  scrollbar-width: none;
 }
 
 .event-list::-webkit-scrollbar {
-  width: 14px;
+  width: 0;
+  height: 0;
 }
 
 .event-list::-webkit-scrollbar-track {
-  border-left: 1px solid var(--line);
-  background: oklch(89% 0.024 246);
+  background: transparent;
 }
 
 .event-list::-webkit-scrollbar-thumb {
-  border: 3px solid oklch(89% 0.024 246);
-  border-radius: 999px;
-  background: var(--accent);
+  background: transparent;
 }
 
 .event-list::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-dark);
+  background: transparent;
 }
 
 .event-scroll-hint {
