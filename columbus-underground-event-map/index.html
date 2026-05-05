@@ -26,21 +26,24 @@
 
           <fieldset class="field category-field">
             <legend>Categories</legend>
-            <div class="category-summary" id="categorySummary">All categories</div>
-            <div class="category-options" id="categoryOptions" aria-label="Categories"></div>
+            <button class="category-toggle" id="categoryToggle" type="button" aria-expanded="false" aria-controls="categoryOptions">
+              <span id="categorySummary">All categories</span>
+              <small>Select multiple</small>
+            </button>
+            <div class="category-options" id="categoryOptions" aria-label="Categories" hidden></div>
           </fieldset>
 
           <div class="date-grid" aria-label="Date range">
             <label class="field date-field">
               <span>Start date</span>
               <span class="date-control">
-                <input id="startDate" name="start" type="text" inputmode="numeric" autocomplete="off" placeholder="YYYY-MM-DD" aria-haspopup="dialog" aria-expanded="false" aria-describedby="dateDefaultNote">
+                <input id="startDate" name="start" type="text" inputmode="numeric" autocomplete="off" placeholder="MM-DD-YYYY" aria-haspopup="dialog" aria-expanded="false" aria-describedby="dateDefaultNote">
               </span>
             </label>
             <label class="field date-field">
               <span>End date</span>
               <span class="date-control">
-                <input id="endDate" name="end" type="text" inputmode="numeric" autocomplete="off" placeholder="YYYY-MM-DD" aria-haspopup="dialog" aria-expanded="false">
+                <input id="endDate" name="end" type="text" inputmode="numeric" autocomplete="off" placeholder="MM-DD-YYYY" aria-haspopup="dialog" aria-expanded="false">
               </span>
             </label>
           </div>

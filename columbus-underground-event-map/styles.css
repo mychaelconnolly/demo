@@ -407,37 +407,85 @@ h1 {
   line-height: 1.2;
 }
 
-.category-options {
+.category-toggle {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px;
-  overflow: hidden;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  min-height: 46px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--line);
+  background: var(--panel-raised);
+  color: var(--ink);
+  cursor: pointer;
+  padding: 9px 12px;
+  text-align: left;
+}
+
+.category-toggle:hover,
+.category-toggle[aria-expanded="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.category-toggle span {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.category-toggle small {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.category-toggle[aria-expanded="true"] small {
+  color: var(--accent-dark);
+}
+
+.category-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  max-height: 210px;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: oklch(99% 0.009 84 / 0.72);
+  padding: 8px;
+}
+
+.category-options[hidden] {
+  display: none;
 }
 
 .category-option {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: 22px;
-  border: 0;
-  border-radius: 0;
+  min-height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
   background: var(--panel-raised);
   color: var(--ink);
   cursor: pointer;
-  padding: 3px 9px;
-  font-size: 0.74rem;
-  font-weight: 700;
+  padding: 5px 10px;
+  font-size: 0.72rem;
+  font-weight: 800;
   line-height: 1.1;
   text-align: left;
 }
 
 .category-options::after {
-  content: "";
-  min-height: 22px;
-  background: var(--panel-raised);
+  content: none;
 }
 
 .category-option:hover {
@@ -559,6 +607,7 @@ h1 {
 
 .status-strip {
   display: flex;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
@@ -575,7 +624,10 @@ h1 {
 
 .event-list {
   display: grid;
+  align-content: start;
+  flex: 1 1 auto;
   gap: 12px;
+  min-height: 0;
   padding: 12px;
   overflow: auto;
 }
@@ -735,6 +787,34 @@ h1 {
   font-size: 0.92rem;
   font-weight: 700;
   padding: 10px 14px;
+}
+
+@media (min-width: 861px) {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .app-shell,
+  .panel,
+  .map-wrap {
+    height: 100vh;
+    min-height: 0;
+  }
+
+  .panel {
+    overflow: hidden;
+  }
+
+  .masthead,
+  .filters {
+    flex: 0 0 auto;
+  }
+
+  #map {
+    height: 100%;
+  }
 }
 
 .venue-marker-icon {

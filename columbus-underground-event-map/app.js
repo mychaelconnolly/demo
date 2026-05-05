@@ -28,6 +28,7 @@ const CU_CATEGORIES = [
 
 const DOWNTOWN_CENTER = [39.9612, -82.9988];
 const DOWNTOWN_RADIUS_MILES = 2;
+const METERS_PER_MILE = 1609.344;
 const COLUMBUS_CENTER = [39.9711, -82.9988];
 const DEFAULT_START_DATE = toIsoDate(new Date());
 const PRETEXT_IMPORT = "./vendor/pretext/dist/layout.js";
@@ -67,6 +68,7 @@ const els = {
   filters: document.querySelector("#filters"),
   searchInput: document.querySelector("#searchInput"),
   categoryOptions: document.querySelector("#categoryOptions"),
+  categoryToggle: document.querySelector("#categoryToggle"),
   categorySummary: document.querySelector("#categorySummary"),
   startDate: document.querySelector("#startDate"),
   endDate: document.querySelector("#endDate"),
@@ -92,6 +94,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 const markerLayer = L.layerGroup().addTo(map);
+const downtownRangeLayer = L.layerGroup().addTo(map);
 
 init();
 
@@ -172,8 +175,14 @@ function bindEvents() {
     schedulePretextLayout(els.categoryOptions);
   });
 
+  els.categoryToggle.addEventListener("click", () => {
+    closeDatePicker();
+    setCategoryMenuOpen(els.categoryOptions.hidden);
+  });
+
   els.filters.addEventListener("reset", () => {
     closeDatePicker();
+    setCategoryMenuOpen(false);
     clearCategorySelections();
     window.setTimeout(() => {
       applyDefaultFilters();
@@ -183,8 +192,14 @@ function bindEvents() {
   });
 }
 
+function setCategoryMenuOpen(open) {
+  els.categoryOptions.hidden = !open;
+  els.categoryToggle.setAttribute("aria-expanded", open ? "true" : "false");
+  if (open) schedulePretextLayout(els.categoryOptions);
+}
+
 function applyDefaultFilters() {
-  els.startDate.value = DEFAULT_START_DATE;
+  els.startDate.value = formatInputDate(DEFAULT_START_DATE);
   els.endDate.value = "";
 }
 
@@ -192,6 +207,7 @@ function bindDatePickers() {
   for (const input of [els.startDate, els.endDate]) {
     input.addEventListener("focus", () => openDatePicker(input));
     input.addEventListener("click", () => openDatePicker(input));
+    input.addEventListener("blur", () => normalizeDateInputValue(input));
     input.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
         closeDatePicker();
@@ -215,7 +231,7 @@ function bindDatePickers() {
 function openDatePicker(input) {
   const field = input.closest(".date-field");
   const popover = ensureDatePicker(field);
-  const selectedDate = parseIsoDate(input.value);
+  const selectedDate = parseDateInput(input.value);
   closeDatePickers();
   state.datePicker.input = input;
   state.datePicker.month = selectedDate || new Date();
@@ -268,7 +284,7 @@ function handleDatePickerClick(event) {
     return;
   }
 
-  state.datePicker.input.value = day.dataset.date;
+  state.datePicker.input.value = formatInputDate(day.dataset.date);
   state.datePicker.input.dispatchEvent(new Event("input", { bubbles: true }));
   closeDatePicker();
 }
@@ -280,7 +296,7 @@ function renderDatePicker() {
 
   const field = input.closest(".date-field");
   const popover = field.querySelector(".date-picker-popover");
-  const selectedIso = input.value;
+  const selectedIso = inputDateToIso(input.value);
   const todayIso = toIsoDate(new Date());
   const year = month.getFullYear();
   const monthIndex = month.getMonth();
@@ -324,17 +340,21 @@ function readFilters() {
     els.categoryOptions.querySelectorAll('.category-option[aria-pressed="true"]'),
     (option) => option.dataset.category
   );
-  state.filters.start = els.startDate.value;
-  state.filters.end = els.endDate.value;
+  state.filters.start = inputDateToIso(els.startDate.value);
+  state.filters.end = inputDateToIso(els.endDate.value);
   state.filters.downtown = els.downtownToggle.checked;
   renderCategorySummary();
 }
 
 function renderCategorySummary() {
   const count = state.filters.categories.length;
-  els.categorySummary.textContent = count
-    ? `${count} ${count === 1 ? "category" : "categories"} selected`
-    : "All categories";
+  if (!count) {
+    els.categorySummary.textContent = "All categories";
+    return;
+  }
+  const preview = state.filters.categories.slice(0, 2).join(", ");
+  const extra = count > 2 ? ` +${count - 2}` : "";
+  els.categorySummary.textContent = `${preview}${extra}`;
 }
 
 function setCategoryOptionSelected(option, selected) {
@@ -384,6 +404,8 @@ function render() {
   els.unmappedCount.textContent = `${unmapped} unmapped`;
 
   renderMarkers(venueGroups);
+  renderDowntownRange();
+  updateMapView(venueGroups);
   renderList(filtered, groupsByEventId);
 }
 
@@ -457,7 +479,30 @@ function renderMarkers(groups) {
       state.markers.set(event.id, { marker, group });
     }
   }
+}
 
+function renderDowntownRange() {
+  downtownRangeLayer.clearLayers();
+  if (!state.filters.downtown) return;
+  L.circle(DOWNTOWN_CENTER, {
+    radius: DOWNTOWN_RADIUS_MILES * METERS_PER_MILE,
+    interactive: false,
+    pane: "overlayPane",
+    color: "#1f72b8",
+    weight: 2,
+    opacity: 0.74,
+    fillColor: "#1f72b8",
+    fillOpacity: 0.07,
+    dashArray: "8 9"
+  }).addTo(downtownRangeLayer);
+}
+
+function updateMapView(groups) {
+  if (state.filters.downtown) {
+    const range = downtownRangeLayer.getLayers()[0];
+    if (range) map.fitBounds(range.getBounds().pad(0.08), { maxZoom: 14 });
+    return;
+  }
   if (groups.length > 1) {
     map.fitBounds(L.latLngBounds(groups.map((group) => [group.lat, group.lng])).pad(0.22), { maxZoom: 14 });
   } else if (groups.length === 1) {
@@ -651,10 +696,46 @@ function toIsoDate(value) {
   return `${year}-${month}-${day}`;
 }
 
-function parseIsoDate(value) {
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
-  const date = parseLocalDate(value);
+function formatInputDate(isoDate) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return isoDate;
+  const [year, month, day] = isoDate.split("-");
+  return `${month}-${day}-${year}`;
+}
+
+function inputDateToIso(value) {
+  const trimmed = value.trim();
+  if (!trimmed) return "";
+  const usMatch = trimmed.match(/^(\d{1,2})[-/](\d{1,2})[-/](\d{4})$/);
+  if (usMatch) {
+    const month = String(Number(usMatch[1])).padStart(2, "0");
+    const day = String(Number(usMatch[2])).padStart(2, "0");
+    const iso = `${usMatch[3]}-${month}-${day}`;
+    return isValidIsoDate(iso) ? iso : "";
+  }
+  if (/^\d{4}-\d{1,2}-\d{1,2}$/.test(trimmed)) {
+    const [year, month, day] = trimmed.split("-");
+    const iso = `${year}-${String(Number(month)).padStart(2, "0")}-${String(Number(day)).padStart(2, "0")}`;
+    return isValidIsoDate(iso) ? iso : "";
+  }
+  return "";
+}
+
+function parseDateInput(value) {
+  const iso = inputDateToIso(value);
+  if (!iso) return null;
+  const date = parseLocalDate(iso);
   return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function normalizeDateInputValue(input) {
+  const iso = inputDateToIso(input.value);
+  if (iso) input.value = formatInputDate(iso);
+}
+
+function isValidIsoDate(value) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const date = parseLocalDate(value);
+  return !Number.isNaN(date.getTime()) && toIsoDate(date) === value;
 }
 
 function formatSourceMode(value) {
