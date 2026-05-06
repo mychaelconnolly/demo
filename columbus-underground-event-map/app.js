@@ -34,6 +34,7 @@ const MAP_MAX_BOUNDS = L.latLngBounds([39.72, -83.26], [40.18, -82.72]);
 const DEFAULT_START_DATE = toIsoDate(new Date());
 const PRETEXT_IMPORT = "./vendor/pretext/dist/layout.js";
 const PRETEXT_DEFAULT_SELECTOR = ".category-options [data-pretext], .leaflet-popup [data-pretext]";
+const MOBILE_QUERY = window.matchMedia("(max-width: 860px)");
 const PRETEXT_TARGETS = {
   "category-label": { maxLines: 2 },
   "popup-title": { maxLines: 2 },
@@ -56,6 +57,12 @@ const state = {
     input: null,
     month: null
   },
+  filteredCount: 0,
+  lastVenueGroups: [],
+  mobileSheet: {
+    expanded: false,
+    layoutFrame: 0
+  },
   pretext: {
     api: null,
     cache: new Map(),
@@ -66,11 +73,16 @@ const state = {
 };
 
 const els = {
+  appShell: document.querySelector(".app-shell"),
+  panel: document.querySelector(".panel"),
   filters: document.querySelector("#filters"),
   searchInput: document.querySelector("#searchInput"),
   categoryOptions: document.querySelector("#categoryOptions"),
   categoryToggle: document.querySelector("#categoryToggle"),
   categorySummary: document.querySelector("#categorySummary"),
+  mobileSheetBody: document.querySelector("#mobileSheetBody"),
+  mobileSheetToggle: document.querySelector("#mobileSheetToggle"),
+  mobileSheetSummary: document.querySelector("#mobileSheetSummary"),
   startDate: document.querySelector("#startDate"),
   endDate: document.querySelector("#endDate"),
   downtownToggle: document.querySelector("#downtownToggle"),
@@ -93,7 +105,7 @@ const map = L.map("map", {
   maxBoundsViscosity: 0.9
 }).setView(COLUMBUS_CENTER, 12);
 
-L.control.zoom({ position: "bottomright" }).addTo(map);
+const zoomControl = L.control.zoom({ position: mobileZoomPosition() }).addTo(map);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 18,
   minZoom: 11,
@@ -112,6 +124,7 @@ async function init() {
   readFilters();
   bindEvents();
   bindPretextRelayout();
+  syncMobileSheetForViewport();
   loadPretext();
 
   try {
@@ -165,6 +178,7 @@ function bindEvents() {
   els.filters.addEventListener("submit", (event) => {
     event.preventDefault();
     readFilters();
+    if (isMobileViewport()) setMobileSheetExpanded(false);
     render();
   });
 
@@ -199,6 +213,87 @@ function bindEvents() {
       readFilters();
       scheduleRender();
     }, 0);
+  });
+
+  if (els.mobileSheetToggle) {
+    els.mobileSheetToggle.addEventListener("click", () => {
+      setMobileSheetExpanded(!state.mobileSheet.expanded);
+    });
+  }
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !isMobileViewport() || !state.mobileSheet.expanded) return;
+    if (document.activeElement && els.panel?.contains(document.activeElement)) {
+      setMobileSheetExpanded(false, { focusToggle: true });
+    }
+  });
+
+  const handleViewportChange = () => syncMobileSheetForViewport({ refit: true });
+  if (MOBILE_QUERY.addEventListener) {
+    MOBILE_QUERY.addEventListener("change", handleViewportChange);
+  } else {
+    MOBILE_QUERY.addListener(handleViewportChange);
+  }
+}
+
+function isMobileViewport() {
+  return MOBILE_QUERY.matches;
+}
+
+function mobileZoomPosition() {
+  return isMobileViewport() ? "topright" : "bottomright";
+}
+
+function syncMobileSheetForViewport({ refit = false } = {}) {
+  zoomControl.setPosition(mobileZoomPosition());
+  setMobileSheetExpanded(isMobileViewport() ? false : true, { refit });
+}
+
+function setMobileSheetExpanded(expanded, { focusToggle = false, refit = false } = {}) {
+  const isMobile = isMobileViewport();
+  const hadFocusInSheetBody = Boolean(els.mobileSheetBody?.contains(document.activeElement));
+  state.mobileSheet.expanded = isMobile ? Boolean(expanded) : true;
+  const sheetState = state.mobileSheet.expanded ? "expanded" : "collapsed";
+  const bodyHidden = isMobile && !state.mobileSheet.expanded;
+
+  if (els.appShell) els.appShell.dataset.mobileSheet = sheetState;
+  if (els.mobileSheetBody) {
+    els.mobileSheetBody.inert = bodyHidden;
+    els.mobileSheetBody.setAttribute("aria-hidden", bodyHidden ? "true" : "false");
+  }
+  if (els.mobileSheetToggle) {
+    els.mobileSheetToggle.setAttribute("aria-expanded", isMobile && state.mobileSheet.expanded ? "true" : "false");
+  }
+  document.body.classList.toggle("is-mobile-sheet-open", isMobile && state.mobileSheet.expanded);
+
+  if (isMobile && !state.mobileSheet.expanded) {
+    closeDatePicker();
+    setCategoryMenuOpen(false);
+  }
+
+  updateMobileSheetSummary();
+  scheduleMapLayout({ refit });
+
+  if ((focusToggle || (bodyHidden && hadFocusInSheetBody)) && els.mobileSheetToggle) {
+    els.mobileSheetToggle.focus({ preventScroll: true });
+  }
+}
+
+function updateMobileSheetSummary() {
+  if (!els.mobileSheetSummary) return;
+  if (isMobileViewport() && state.mobileSheet.expanded) {
+    els.mobileSheetSummary.textContent = "Hide filters and event list";
+    return;
+  }
+  els.mobileSheetSummary.textContent = `${pluralize(state.filteredCount, "event")} found. Show filters and list`;
+}
+
+function scheduleMapLayout({ refit = false } = {}) {
+  window.cancelAnimationFrame(state.mobileSheet.layoutFrame);
+  state.mobileSheet.layoutFrame = window.requestAnimationFrame(() => {
+    map.invalidateSize();
+    if (refit) updateMapView(state.lastVenueGroups);
+    schedulePretextLayout();
   });
 }
 
@@ -409,9 +504,12 @@ function render() {
   const groupsByEventId = mapGroupsByEventId(venueGroups);
   const unmapped = filtered.length - mapped.length;
 
+  state.filteredCount = filtered.length;
+  state.lastVenueGroups = venueGroups;
   els.resultCount.textContent = pluralize(filtered.length, "event");
   els.mappedCount.textContent = `${mapped.length} mapped across ${pluralize(venueGroups.length, "venue")}`;
   els.unmappedCount.textContent = `${unmapped} unmapped`;
+  updateMobileSheetSummary();
 
   renderMarkers(venueGroups);
   renderDowntownRange();
@@ -531,14 +629,22 @@ function renderDowntownRange() {
 function updateMapView(groups) {
   if (state.filters.downtown) {
     const range = downtownRangeLayer.getLayers()[0];
-    if (range) map.fitBounds(range.getBounds().pad(0.08), { maxZoom: 14 });
+    if (range) map.fitBounds(range.getBounds().pad(0.08), mapFitOptions());
     return;
   }
   if (groups.length > 1) {
-    map.fitBounds(L.latLngBounds(groups.map((group) => [group.lat, group.lng])).pad(0.22), { maxZoom: 14 });
+    map.fitBounds(L.latLngBounds(groups.map((group) => [group.lat, group.lng])).pad(0.22), mapFitOptions());
   } else if (groups.length === 1) {
     map.setView([groups[0].lat, groups[0].lng], 15);
   }
+}
+
+function mapFitOptions() {
+  const options = { maxZoom: 14 };
+  if (!isMobileViewport()) return options;
+  options.paddingTopLeft = [16, 92];
+  options.paddingBottomRight = [16, state.mobileSheet.expanded ? 300 : 118];
+  return options;
 }
 
 function venueIcon(group) {
@@ -585,10 +691,7 @@ function renderList(events, groupsByEventId) {
     if (event.hasLocation) {
       node.querySelector(".event-card-main").addEventListener("click", () => {
         const entry = state.markers.get(event.id);
-        if (entry) {
-          map.setView(entry.marker.getLatLng(), 15);
-          openVenuePopup(entry.marker, entry.group, event.id);
-        }
+        if (entry) revealEventOnMap(entry, event.id);
       });
     } else {
       node.querySelector(".event-card-main").setAttribute("aria-disabled", "true");
@@ -597,6 +700,21 @@ function renderList(events, groupsByEventId) {
     fragment.append(node);
   }
   els.eventList.append(fragment);
+}
+
+function revealEventOnMap(entry, eventId) {
+  if (!isMobileViewport()) {
+    map.setView(entry.marker.getLatLng(), 15);
+    openVenuePopup(entry.marker, entry.group, eventId);
+    return;
+  }
+
+  setMobileSheetExpanded(false);
+  window.requestAnimationFrame(() => {
+    map.invalidateSize();
+    map.setView(entry.marker.getLatLng(), 15);
+    openVenuePopup(entry.marker, entry.group, eventId);
+  });
 }
 
 function openVenuePopup(marker, group, activeEventId) {

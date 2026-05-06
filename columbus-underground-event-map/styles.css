@@ -17,6 +17,8 @@
   --shadow-soft: 0 10px 24px oklch(24% 0.018 68 / 0.10);
   --radius: 8px;
   --font-ui: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  --mobile-sheet-collapsed-height: 86px;
+  --mobile-sheet-expanded-height: 82dvh;
 }
 
 * {
@@ -188,6 +190,17 @@ select {
     var(--panel);
   box-shadow: var(--shadow);
   z-index: 500;
+}
+
+.mobile-sheet-toggle {
+  display: none;
+}
+
+.mobile-sheet-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .masthead {
@@ -995,23 +1008,117 @@ h1 {
 }
 
 @media (max-width: 860px) {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
   .app-shell {
-    grid-template-columns: 1fr;
+    display: block;
+    position: relative;
+    height: 100dvh;
+    min-height: 100dvh;
+    overflow: hidden;
+  }
+
+  .map-wrap {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    min-height: 100dvh;
+    height: 100dvh;
+  }
+
+  #map {
+    height: 100dvh;
   }
 
   .panel {
-    min-height: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
+    height: min(var(--mobile-sheet-expanded-height), calc(100dvh - 44px));
+    min-height: 0;
     max-height: none;
+    overflow: hidden;
     border-right: 0;
+    border-bottom: 0;
+    border-top: 1px solid var(--line);
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -18px 42px oklch(24% 0.018 68 / 0.18);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    transform: translateY(calc(100% - var(--mobile-sheet-collapsed-height)));
+    transition: transform 190ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+
+  .app-shell[data-mobile-sheet="expanded"] .panel {
+    transform: translateY(0);
+  }
+
+  .mobile-sheet-toggle {
+    display: grid;
+    flex: 0 0 auto;
+    place-items: center;
+    gap: 9px;
+    width: 100%;
+    min-height: var(--mobile-sheet-collapsed-height);
+    border: 0;
     border-bottom: 1px solid var(--line);
+    background: oklch(98% 0.012 84 / 0.98);
+    color: var(--ink);
+    cursor: pointer;
+    padding: 11px 18px 13px;
+    text-align: center;
+  }
+
+  .mobile-sheet-toggle:focus-visible {
+    outline: 3px solid oklch(54% 0.155 33 / 0.28);
+    outline-offset: -5px;
+  }
+
+  .mobile-sheet-grip {
+    width: 44px;
+    height: 5px;
+    border-radius: 999px;
+    background: var(--line-strong);
+  }
+
+  .mobile-sheet-toggle #mobileSheetSummary {
+    color: var(--ink);
+    font-size: 0.92rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .mobile-sheet-body {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .masthead {
-    padding: 22px 18px 14px;
+    padding: 10px 14px 8px;
+  }
+
+  .eyebrow,
+  .lede {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.12rem;
+    line-height: 1.15;
   }
 
   .filters {
-    padding-inline: 14px;
+    padding: 0 14px 10px;
   }
 
   .field input,
@@ -1021,30 +1128,62 @@ h1 {
     min-height: 44px;
   }
 
+  .category-options {
+    max-height: 172px;
+  }
+
   .toggle-row {
     min-height: 54px;
   }
 
-  .map-wrap {
-    min-height: 60vh;
-  }
-
-  #map {
-    height: 60vh;
+  .event-list-wrap {
+    flex: 1 1 auto;
+    min-height: 190px;
   }
 
   .event-list {
-    max-height: 52vh;
+    max-height: none;
+    padding: 10px 22px 16px 12px;
+  }
+
+  .map-toolbar {
+    top: max(12px, env(safe-area-inset-top));
+    right: 72px;
+    left: 12px;
+    z-index: 650;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 6px;
+    pointer-events: none;
+  }
+
+  .map-toolbar span {
+    font-size: 0.74rem;
+    padding: 7px 10px;
+  }
+
+  .leaflet-top.leaflet-right {
+    top: max(12px, env(safe-area-inset-top));
+    right: 12px;
+  }
+
+  .leaflet-bottom {
+    bottom: calc(var(--mobile-sheet-collapsed-height) + env(safe-area-inset-bottom, 0px));
+  }
+
+  .leaflet-control-zoom a {
+    width: 42px;
+    height: 42px;
   }
 }
 
 @media (max-width: 520px) {
   .masthead {
-    padding: 20px 14px 12px;
+    padding: 10px 14px 8px;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.08rem;
   }
 
   .filters {
@@ -1092,10 +1231,10 @@ h1 {
   }
 
   .map-toolbar {
-    left: 12px;
-    right: 12px;
+    left: 10px;
+    right: 66px;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .leaflet-popup-content {
