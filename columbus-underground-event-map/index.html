@@ -8,10 +8,10 @@
     <link rel="icon" href="../favicon.png" type="image/png">
     <link rel="preconnect" href="https://tile.openstreetmap.org">
     <link rel="stylesheet" href="vendor/leaflet/leaflet.css?v=1.9.4">
-    <link rel="stylesheet" href="styles.css?v=2026050601">
+    <link rel="stylesheet" href="styles.css?v=2026050602">
   </head>
   <body>
-    <main class="app-shell" data-mobile-sheet="collapsed">
+    <main class="app-shell" data-mobile-sheet="collapsed" data-mobile-filters="collapsed">
       <section class="panel" aria-label="Event filters and list">
         <button class="mobile-sheet-toggle" id="mobileSheetToggle" type="button" aria-expanded="false" aria-controls="mobileSheetBody">
           <span class="mobile-sheet-grip" aria-hidden="true"></span>
@@ -31,44 +31,51 @@
               <input id="searchInput" name="search" type="search" autocomplete="off" placeholder="Title, venue, address">
             </label>
 
-            <fieldset class="field category-field">
-              <legend>Categories</legend>
-              <button class="category-toggle" id="categoryToggle" type="button" aria-expanded="false" aria-controls="categoryOptions">
-                <span id="categorySummary">All categories</span>
-                <small>Select multiple</small>
-              </button>
-              <div class="category-options" id="categoryOptions" aria-label="Categories" hidden></div>
-            </fieldset>
+            <button class="mobile-filters-toggle" id="mobileFiltersToggle" type="button" aria-expanded="false" aria-controls="mobileFilterBody">
+              <span>More filters</span>
+              <small id="mobileFiltersSummary">Categories, dates, downtown</small>
+            </button>
 
-            <div class="date-grid" aria-label="Date range">
-              <label class="field date-field">
-                <span>Start date</span>
-                <span class="date-control">
-                  <input id="startDate" name="start" type="text" inputmode="numeric" autocomplete="off" placeholder="MM-DD-YYYY" aria-haspopup="dialog" aria-expanded="false" aria-describedby="dateDefaultNote">
+            <div class="mobile-filter-body" id="mobileFilterBody">
+              <fieldset class="field category-field">
+                <legend>Categories</legend>
+                <button class="category-toggle" id="categoryToggle" type="button" aria-expanded="false" aria-controls="categoryOptions">
+                  <span id="categorySummary">All categories</span>
+                  <small>Select multiple</small>
+                </button>
+                <div class="category-options" id="categoryOptions" aria-label="Categories" hidden></div>
+              </fieldset>
+
+              <div class="date-grid" aria-label="Date range">
+                <label class="field date-field">
+                  <span>Start date</span>
+                  <span class="date-control">
+                    <input id="startDate" name="start" type="text" inputmode="numeric" autocomplete="off" placeholder="MM-DD-YYYY" aria-haspopup="dialog" aria-expanded="false" aria-describedby="dateDefaultNote">
+                  </span>
+                </label>
+                <label class="field date-field">
+                  <span>End date</span>
+                  <span class="date-control">
+                    <input id="endDate" name="end" type="text" inputmode="numeric" autocomplete="off" placeholder="MM-DD-YYYY" aria-haspopup="dialog" aria-expanded="false">
+                  </span>
+                </label>
+              </div>
+
+              <label class="toggle-row">
+                <input id="downtownToggle" type="checkbox">
+                <span class="toggle-ui" aria-hidden="true"></span>
+                <span>
+                  <strong>Near downtown</strong>
+                  <small>Within 2 miles of Broad &amp; High</small>
                 </span>
               </label>
-              <label class="field date-field">
-                <span>End date</span>
-                <span class="date-control">
-                  <input id="endDate" name="end" type="text" inputmode="numeric" autocomplete="off" placeholder="MM-DD-YYYY" aria-haspopup="dialog" aria-expanded="false">
-                </span>
-              </label>
-            </div>
 
-            <label class="toggle-row">
-              <input id="downtownToggle" type="checkbox">
-              <span class="toggle-ui" aria-hidden="true"></span>
-              <span>
-                <strong>Near downtown</strong>
-                <small>Within 2 miles of Broad &amp; High</small>
-              </span>
-            </label>
+              <p class="filter-note" id="dateDefaultNote">Default view starts at today. Clear the start date to inspect older listings.</p>
 
-            <p class="filter-note" id="dateDefaultNote">Default view starts at today. Clear the start date to inspect older listings.</p>
-
-            <div class="filter-actions">
-              <button class="button button-primary" type="submit">Search</button>
-              <button class="button button-ghost" id="resetButton" type="reset">Reset</button>
+              <div class="filter-actions">
+                <button class="button button-primary" type="submit">Search</button>
+                <button class="button button-ghost" id="resetButton" type="reset">Reset</button>
+              </div>
             </div>
           </form>
 
@@ -111,6 +118,6 @@
     </template>
 
     <script src="vendor/leaflet/leaflet.js?v=1.9.4"></script>
-    <script src="app.js?v=2026050601" type="module"></script>
+    <script src="app.js?v=2026050602" type="module"></script>
   </body>
 </html>

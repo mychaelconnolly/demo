@@ -61,7 +61,14 @@ const state = {
   lastVenueGroups: [],
   mobileSheet: {
     expanded: false,
-    layoutFrame: 0
+    layoutFrame: 0,
+    pointerId: null,
+    startX: 0,
+    startY: 0,
+    suppressClick: false
+  },
+  mobileFilters: {
+    expanded: false
   },
   pretext: {
     api: null,
@@ -80,6 +87,9 @@ const els = {
   categoryOptions: document.querySelector("#categoryOptions"),
   categoryToggle: document.querySelector("#categoryToggle"),
   categorySummary: document.querySelector("#categorySummary"),
+  mobileFilterBody: document.querySelector("#mobileFilterBody"),
+  mobileFiltersToggle: document.querySelector("#mobileFiltersToggle"),
+  mobileFiltersSummary: document.querySelector("#mobileFiltersSummary"),
   mobileSheetBody: document.querySelector("#mobileSheetBody"),
   mobileSheetToggle: document.querySelector("#mobileSheetToggle"),
   mobileSheetSummary: document.querySelector("#mobileSheetSummary"),
@@ -125,6 +135,7 @@ async function init() {
   bindEvents();
   bindPretextRelayout();
   syncMobileSheetForViewport();
+  syncMobileFiltersForViewport();
   loadPretext();
 
   try {
@@ -207,6 +218,7 @@ function bindEvents() {
   els.filters.addEventListener("reset", () => {
     closeDatePicker();
     setCategoryMenuOpen(false);
+    setMobileFiltersExpanded(false);
     clearCategorySelections();
     window.setTimeout(() => {
       applyDefaultFilters();
@@ -217,7 +229,21 @@ function bindEvents() {
 
   if (els.mobileSheetToggle) {
     els.mobileSheetToggle.addEventListener("click", () => {
+      if (state.mobileSheet.suppressClick) {
+        state.mobileSheet.suppressClick = false;
+        return;
+      }
       setMobileSheetExpanded(!state.mobileSheet.expanded);
+    });
+    els.mobileSheetToggle.addEventListener("pointerdown", handleMobileSheetPointerDown);
+    els.mobileSheetToggle.addEventListener("pointerup", handleMobileSheetPointerUp);
+    els.mobileSheetToggle.addEventListener("pointercancel", resetMobileSheetPointer);
+    els.mobileSheetToggle.addEventListener("lostpointercapture", resetMobileSheetPointer);
+  }
+
+  if (els.mobileFiltersToggle) {
+    els.mobileFiltersToggle.addEventListener("click", () => {
+      setMobileFiltersExpanded(!state.mobileFilters.expanded);
     });
   }
 
@@ -228,12 +254,47 @@ function bindEvents() {
     }
   });
 
-  const handleViewportChange = () => syncMobileSheetForViewport({ refit: true });
+  const handleViewportChange = () => {
+    syncMobileSheetForViewport({ refit: true });
+    syncMobileFiltersForViewport();
+  };
   if (MOBILE_QUERY.addEventListener) {
     MOBILE_QUERY.addEventListener("change", handleViewportChange);
   } else {
     MOBILE_QUERY.addListener(handleViewportChange);
   }
+}
+
+function handleMobileSheetPointerDown(event) {
+  if (!isMobileViewport()) return;
+  if (event.pointerType === "mouse" && event.button !== 0) return;
+  state.mobileSheet.pointerId = event.pointerId;
+  state.mobileSheet.startX = event.clientX;
+  state.mobileSheet.startY = event.clientY;
+  state.mobileSheet.suppressClick = false;
+  els.mobileSheetToggle.setPointerCapture?.(event.pointerId);
+}
+
+function handleMobileSheetPointerUp(event) {
+  if (state.mobileSheet.pointerId !== event.pointerId) return;
+  const deltaX = event.clientX - state.mobileSheet.startX;
+  const deltaY = event.clientY - state.mobileSheet.startY;
+  resetMobileSheetPointer();
+
+  const verticalIntent = Math.abs(deltaY) >= 34 && Math.abs(deltaY) > Math.abs(deltaX) * 1.25;
+  if (!verticalIntent) return;
+
+  state.mobileSheet.suppressClick = true;
+  setMobileSheetExpanded(deltaY < 0);
+  window.setTimeout(() => {
+    state.mobileSheet.suppressClick = false;
+  }, 0);
+}
+
+function resetMobileSheetPointer() {
+  state.mobileSheet.pointerId = null;
+  state.mobileSheet.startX = 0;
+  state.mobileSheet.startY = 0;
 }
 
 function isMobileViewport() {
@@ -247,6 +308,10 @@ function mobileZoomPosition() {
 function syncMobileSheetForViewport({ refit = false } = {}) {
   zoomControl.setPosition(mobileZoomPosition());
   setMobileSheetExpanded(isMobileViewport() ? false : true, { refit });
+}
+
+function syncMobileFiltersForViewport() {
+  setMobileFiltersExpanded(false);
 }
 
 function setMobileSheetExpanded(expanded, { focusToggle = false, refit = false } = {}) {
@@ -269,6 +334,7 @@ function setMobileSheetExpanded(expanded, { focusToggle = false, refit = false }
   if (isMobile && !state.mobileSheet.expanded) {
     closeDatePicker();
     setCategoryMenuOpen(false);
+    setMobileFiltersExpanded(false);
   }
 
   updateMobileSheetSummary();
@@ -282,10 +348,41 @@ function setMobileSheetExpanded(expanded, { focusToggle = false, refit = false }
 function updateMobileSheetSummary() {
   if (!els.mobileSheetSummary) return;
   if (isMobileViewport() && state.mobileSheet.expanded) {
-    els.mobileSheetSummary.textContent = "Hide filters and event list";
+    els.mobileSheetSummary.textContent = "Swipe down for map";
     return;
   }
-  els.mobileSheetSummary.textContent = `${pluralize(state.filteredCount, "event")} found. Show filters and list`;
+  els.mobileSheetSummary.textContent = "Tap to search & filter";
+}
+
+function setMobileFiltersExpanded(expanded) {
+  const isMobile = isMobileViewport();
+  state.mobileFilters.expanded = isMobile ? Boolean(expanded) : true;
+  const filtersState = state.mobileFilters.expanded ? "expanded" : "collapsed";
+  const filtersHidden = isMobile && !state.mobileFilters.expanded;
+
+  if (els.appShell) els.appShell.dataset.mobileFilters = filtersState;
+  if (els.mobileFiltersToggle) {
+    els.mobileFiltersToggle.setAttribute("aria-expanded", isMobile && state.mobileFilters.expanded ? "true" : "false");
+  }
+  if (els.mobileFilterBody) {
+    els.mobileFilterBody.inert = filtersHidden;
+    els.mobileFilterBody.setAttribute("aria-hidden", filtersHidden ? "true" : "false");
+  }
+
+  if (filtersHidden) {
+    closeDatePicker();
+    setCategoryMenuOpen(false);
+  }
+
+  updateMobileFiltersSummary();
+  if (state.mobileFilters.expanded) schedulePretextLayout(els.mobileFilterBody);
+}
+
+function updateMobileFiltersSummary() {
+  if (!els.mobileFiltersSummary) return;
+  els.mobileFiltersSummary.textContent = state.mobileFilters.expanded
+    ? "Hide controls"
+    : "Categories, dates, downtown";
 }
 
 function scheduleMapLayout({ refit = false } = {}) {
