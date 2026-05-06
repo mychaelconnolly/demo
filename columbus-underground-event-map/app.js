@@ -34,6 +34,8 @@ const MAP_MAX_BOUNDS = L.latLngBounds([39.72, -83.26], [40.18, -82.72]);
 const DEFAULT_START_DATE = toIsoDate(new Date());
 const PRETEXT_IMPORT = "./vendor/pretext/dist/layout.js";
 const PRETEXT_DEFAULT_SELECTOR = ".category-options [data-pretext], .leaflet-popup [data-pretext]";
+const MOBILE_POPUP_MIN_WIDTH = 260;
+const MOBILE_POPUP_MAX_WIDTH = 318;
 const MOBILE_QUERY = window.matchMedia("(max-width: 860px)");
 const PRETEXT_TARGETS = {
   "category-label": { maxLines: 2 },
@@ -180,7 +182,13 @@ function populateCategories() {
 
 function bindPretextRelayout() {
   window.addEventListener("resize", () => schedulePretextLayout());
-  map.on("popupopen", (event) => schedulePretextLayout(event.popup.getElement()));
+  map.on("popupopen", (event) => {
+    document.body.classList.add("is-map-popup-open");
+    schedulePretextLayout(event.popup.getElement());
+  });
+  map.on("popupclose", () => {
+    document.body.classList.remove("is-map-popup-open");
+  });
 }
 
 function bindEvents() {
@@ -697,8 +705,11 @@ function renderMarkers(groups) {
       zIndexOffset: group.events.length > 1 ? group.events.length * 100 : 0
     });
 
-    marker.bindPopup(groupPopupHtml(group));
-    marker.on("click", () => marker.setPopupContent(groupPopupHtml(group)));
+    marker.bindPopup(groupPopupHtml(group), popupOptions());
+    marker.on("click", () => {
+      applyPopupOptions(marker);
+      marker.setPopupContent(groupPopupHtml(group));
+    });
 
     marker.addTo(markerLayer);
     for (const event of group.events) {
@@ -740,8 +751,41 @@ function mapFitOptions() {
   const options = { maxZoom: 14 };
   if (!isMobileViewport()) return options;
   options.paddingTopLeft = [16, 92];
-  options.paddingBottomRight = [16, state.mobileSheet.expanded ? 300 : 118];
+  options.paddingBottomRight = [16, state.mobileSheet.expanded ? 280 : 104];
   return options;
+}
+
+function popupOptions() {
+  if (!isMobileViewport()) {
+    return {
+      autoPan: true,
+      autoPanPadding: [24, 24],
+      keepInView: true,
+      maxWidth: 460,
+      minWidth: 340
+    };
+  }
+
+  const width = Math.max(
+    MOBILE_POPUP_MIN_WIDTH,
+    Math.min(MOBILE_POPUP_MAX_WIDTH, window.innerWidth - 48)
+  );
+
+  return {
+    autoPan: true,
+    autoPanPaddingTopLeft: [12, 112],
+    autoPanPaddingBottomRight: [12, 96],
+    keepInView: true,
+    maxHeight: Math.max(220, window.innerHeight - 170),
+    maxWidth: width,
+    minWidth: Math.min(width, 280)
+  };
+}
+
+function applyPopupOptions(marker) {
+  const popup = marker.getPopup();
+  if (!popup) return;
+  Object.assign(popup.options, popupOptions());
 }
 
 function venueIcon(group) {
@@ -815,9 +859,12 @@ function revealEventOnMap(entry, eventId) {
 }
 
 function openVenuePopup(marker, group, activeEventId) {
+  applyPopupOptions(marker);
   marker.setPopupContent(groupPopupHtml(group, activeEventId));
   marker.openPopup();
-  schedulePretextLayout(marker.getPopup()?.getElement() || null);
+  const popup = marker.getPopup();
+  window.requestAnimationFrame(() => popup?.update());
+  schedulePretextLayout(popup?.getElement() || null);
 }
 
 function groupPopupHtml(group, activeEventId = "") {
