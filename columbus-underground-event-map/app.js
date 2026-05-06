@@ -383,6 +383,10 @@ function setMobileFiltersExpanded(expanded) {
   }
 
   updateMobileFiltersSummary();
+  if (isMobile && state.mobileFilters.expanded) {
+    setCategoryMenuOpen(true);
+    if (els.mobileFilterBody) els.mobileFilterBody.scrollTop = 0;
+  }
   if (state.mobileFilters.expanded) schedulePretextLayout(els.mobileFilterBody);
 }
 

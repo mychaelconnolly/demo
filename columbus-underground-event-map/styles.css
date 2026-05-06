@@ -1140,7 +1140,6 @@ h1 {
   }
 
   .app-shell[data-mobile-filters="expanded"] .filters {
-    order: 2;
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -1190,20 +1189,16 @@ h1 {
 
   .app-shell[data-mobile-filters="expanded"] .mobile-filter-body {
     display: grid;
+    flex: 1 1 auto;
     gap: 7px;
-    max-height: min(36dvh, 310px);
+    max-height: none;
+    min-height: 0;
     overflow-y: auto;
     overscroll-behavior: contain;
     padding-right: 2px;
+    padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
     touch-action: pan-y;
     -webkit-overflow-scrolling: touch;
-  }
-
-  .app-shell[data-mobile-filters="expanded"] .mobile-filter-body {
-    flex: 1 1 auto;
-    max-height: none;
-    min-height: 0;
-    padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
   }
 
   .field > span,
@@ -1314,9 +1309,8 @@ h1 {
   }
 
   .app-shell[data-mobile-filters="expanded"] .event-list-wrap {
-    order: 3;
-    flex: 0 0 clamp(112px, 18dvh, 152px);
-    min-height: clamp(112px, 18dvh, 152px);
+    flex-basis: clamp(104px, 18dvh, 152px);
+    min-height: clamp(104px, 18dvh, 152px);
     border-top: 1px solid var(--line);
   }
 
