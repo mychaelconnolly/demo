@@ -191,13 +191,13 @@ select {
 }
 
 .masthead {
-  padding: 22px 24px 14px;
+  padding: 14px 18px 8px;
 }
 
 .eyebrow {
-  margin: 0 0 10px;
+  margin: 0 0 6px;
   color: var(--accent-dark);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -205,43 +205,43 @@ select {
 
 h1 {
   margin: 0;
-  font-size: clamp(1.92rem, 3.05vw, 2.72rem);
+  font-size: clamp(1.58rem, 2.45vw, 2.18rem);
   font-weight: 760;
-  line-height: 0.98;
+  line-height: 1;
   letter-spacing: 0;
 }
 
 .lede {
-  max-width: 31rem;
-  margin: 8px 0 0;
+  max-width: 29rem;
+  margin: 6px 0 0;
   color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.36;
+  font-size: 0.82rem;
+  line-height: 1.28;
 }
 
 .filter-note {
-  margin: -2px 0 0;
+  margin: -3px 0 0;
   color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.35;
+  font-size: 0.72rem;
+  line-height: 1.25;
 }
 
 .filters {
   display: grid;
-  gap: 10px;
-  padding: 0 18px 16px;
+  gap: 8px;
+  padding: 0 14px 10px;
 }
 
 .field {
   display: grid;
-  gap: 5px;
+  gap: 4px;
 }
 
 .field > span,
 .field > legend,
 .toggle-row strong {
   color: var(--ink);
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -254,14 +254,14 @@ h1 {
 .field input,
 .field select {
   width: 100%;
-  min-height: 46px;
+  min-height: 38px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel-raised);
   color: var(--ink);
-  padding: 9px 12px;
+  padding: 7px 10px;
   outline: none;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
 }
 
 .field input[type="date"] {
@@ -391,7 +391,7 @@ h1 {
 .date-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 8px;
 }
 
 .category-field {
@@ -410,15 +410,15 @@ h1 {
 .category-toggle {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 12px;
+  gap: 10px;
   align-items: center;
-  min-height: 46px;
+  min-height: 40px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel-raised);
   color: var(--ink);
   cursor: pointer;
-  padding: 9px 12px;
+  padding: 8px 10px;
   text-align: left;
 }
 
@@ -432,7 +432,7 @@ h1 {
   min-width: 0;
   overflow: hidden;
   color: var(--ink);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 800;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -440,7 +440,7 @@ h1 {
 
 .category-toggle small {
   color: var(--muted);
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -514,14 +514,14 @@ h1 {
 
 .toggle-row {
   display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 10px;
+  grid-template-columns: 52px 1fr;
+  gap: 9px;
   align-items: center;
-  min-height: 56px;
+  min-height: 48px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: oklch(99% 0.009 84 / 0.58);
-  padding: 10px 12px;
+  padding: 8px 10px;
   cursor: pointer;
 }
 
@@ -533,8 +533,8 @@ h1 {
 
 .toggle-ui {
   position: relative;
-  width: 54px;
-  height: 30px;
+  width: 46px;
+  height: 26px;
   border-radius: 999px;
   background: var(--line-strong);
   transition: background 160ms ease;
@@ -543,10 +543,10 @@ h1 {
 .toggle-ui::after {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 22px;
-  height: 22px;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: var(--panel-raised);
   box-shadow: 0 2px 7px oklch(24% 0.018 68 / 0.28);
@@ -558,29 +558,29 @@ h1 {
 }
 
 .toggle-row input:checked + .toggle-ui::after {
-  transform: translateX(24px);
+  transform: translateX(20px);
 }
 
 .toggle-row small {
   display: block;
-  margin-top: 2px;
+  margin-top: 1px;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.75rem;
 }
 
 .filter-actions {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 8px;
 }
 
 .button {
-  min-height: 44px;
+  min-height: 40px;
   border: 1px solid transparent;
   border-radius: var(--radius);
   cursor: pointer;
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -610,12 +610,12 @@ h1 {
   flex: 0 0 auto;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  padding: 12px 18px;
+  padding: 8px 14px;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.84rem;
 }
 
 .status-strip strong {
@@ -1012,6 +1012,17 @@ h1 {
 
   .filters {
     padding-inline: 14px;
+  }
+
+  .field input,
+  .field select,
+  .category-toggle,
+  .button {
+    min-height: 44px;
+  }
+
+  .toggle-row {
+    min-height: 54px;
   }
 
   .map-wrap {
