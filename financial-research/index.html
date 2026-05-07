@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Financial research data prototype for stakeholder review.">
+    <meta name="referrer" content="no-referrer">
+    <title>Financial Research Workbench</title>
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Ticker navigation">
+        <a class="back-link" href="../">demo.michaelconnolly.tech</a>
+        <div class="brand-block">
+          <p class="kicker">Research prototype</p>
+          <h1>Financial Research Workbench</h1>
+        </div>
+
+        <label class="control-label" for="ticker-search">Universe</label>
+        <input id="ticker-search" class="ticker-search" type="search" autocomplete="off" placeholder="Search ticker or company">
+        <div id="universe-list" class="universe-list" aria-label="Available tickers"></div>
+
+        <div class="source-stack" aria-label="Data sources">
+          <span>yfinance-ready</span>
+          <span>SEC CompanyFacts-ready</span>
+          <span>SQLite cache</span>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="workspace-header">
+          <div>
+            <p id="company-kicker" class="kicker">Loading</p>
+            <h2 id="company-name">Financial Research Workbench</h2>
+            <p id="company-meta" class="meta-line">Loading public demo fixture.</p>
+          </div>
+          <div class="compare-control">
+            <label class="control-label" for="compare-select">Compare</label>
+            <select id="compare-select"></select>
+          </div>
+        </header>
+
+        <div id="demo-notice" class="demo-notice" role="status"></div>
+
+        <section id="metric-grid" class="metric-grid" aria-label="Key metrics"></section>
+
+        <section class="panel chart-panel" aria-label="Metric chart">
+          <div class="panel-head">
+            <div>
+              <p class="kicker">Trend</p>
+              <h3 id="chart-title">Revenue</h3>
+            </div>
+            <div class="segmented" role="group" aria-label="Chart metric">
+              <button type="button" data-chart-metric="revenue">Revenue</button>
+              <button type="button" data-chart-metric="net_income">Income</button>
+              <button type="button" data-chart-metric="operating_cash_flow">Cash flow</button>
+              <button type="button" data-chart-metric="total_debt">Debt</button>
+              <button type="button" data-chart-metric="diluted_shares">Shares</button>
+              <button type="button" data-chart-metric="close">Price</button>
+            </div>
+          </div>
+          <svg id="trend-chart" class="trend-chart" role="img" aria-labelledby="chart-title"></svg>
+        </section>
+
+        <section class="split-grid">
+          <section class="panel" aria-label="Compare summary">
+            <div class="panel-head">
+              <div>
+                <p class="kicker">Compare</p>
+                <h3 id="compare-title">Peer snapshot</h3>
+              </div>
+            </div>
+            <div id="compare-grid" class="compare-grid"></div>
+          </section>
+
+          <section class="panel" aria-label="Data quality">
+            <div class="panel-head">
+              <div>
+                <p class="kicker">Quality</p>
+                <h3>Fetch state</h3>
+              </div>
+            </div>
+            <div id="quality-list" class="quality-list"></div>
+          </section>
+        </section>
+
+        <section class="panel table-panel" aria-label="Fundamentals table">
+          <div class="panel-head">
+            <div>
+              <p class="kicker">Fundamentals</p>
+              <h3>Statement metrics</h3>
+            </div>
+            <div class="segmented" role="group" aria-label="Statement period">
+              <button type="button" data-frequency="annual">Annual</button>
+              <button type="button" data-frequency="quarterly">Quarterly</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead id="statement-head"></thead>
+              <tbody id="statement-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <footer class="app-footer">
+          Research prototype only. Not investment advice. Demo fixture avoids private watchlists and paid vendor data.
+        </footer>
+      </main>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
+

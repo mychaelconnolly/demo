@@ -1,0 +1,5264 @@
+{
+  "companies": [
+    {
+      "annual": [
+        {
+          "assets": 336552,
+          "capital_expenditure": 20120,
+          "diluted_shares": 16350,
+          "fiscal_year": 2021,
+          "free_cash_flow": 83479,
+          "gross_margin": 0.36,
+          "liabilities": 195200,
+          "net_income": 84248,
+          "operating_cash_flow": 103599,
+          "period": "2021",
+          "revenue": 365817,
+          "source": {
+            "assets": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "Assets",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "derived",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "derived",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 96927
+        },
+        {
+          "assets": 353796,
+          "capital_expenditure": 22401,
+          "diluted_shares": 15909,
+          "fiscal_year": 2022,
+          "free_cash_flow": 79346,
+          "gross_margin": 0.366,
+          "liabilities": 198833,
+          "net_income": 83457,
+          "operating_cash_flow": 101748,
+          "period": "2022",
+          "revenue": 355574,
+          "source": {
+            "assets": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "Assets",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "derived",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "derived",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 98497
+        },
+        {
+          "assets": 388074,
+          "capital_expenditure": 19948,
+          "diluted_shares": 15467,
+          "fiscal_year": 2023,
+          "free_cash_flow": 84905,
+          "gross_margin": 0.372,
+          "liabilities": 211112,
+          "net_income": 86725,
+          "operating_cash_flow": 104852,
+          "period": "2023",
+          "revenue": 362686,
+          "source": {
+            "assets": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "Assets",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "derived",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "derived",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 104314
+        },
+        {
+          "assets": 429394,
+          "capital_expenditure": 23626,
+          "diluted_shares": 15026,
+          "fiscal_year": 2024,
+          "free_cash_flow": 85898,
+          "gross_margin": 0.378,
+          "liabilities": 225861,
+          "net_income": 91328,
+          "operating_cash_flow": 109524,
+          "period": "2024",
+          "revenue": 375017,
+          "source": {
+            "assets": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "Assets",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 111299
+        },
+        {
+          "assets": 468959,
+          "capital_expenditure": 21142,
+          "diluted_shares": 14584,
+          "fiscal_year": 2025,
+          "free_cash_flow": 92254,
+          "gross_margin": 0.384,
+          "liabilities": 246672,
+          "net_income": 95306,
+          "operating_cash_flow": 113396,
+          "period": "2025",
+          "revenue": 384392,
+          "source": {
+            "assets": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "Assets",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 121554
+        }
+      ],
+      "cik": "0000320193",
+      "data_freshness": {
+        "sec": "demo fixture shaped like SEC CompanyFacts output",
+        "yahoo": "demo fixture generated from approved sample universe"
+      },
+      "exchange": "NASDAQ",
+      "fetch_status": [
+        {
+          "detail": "Pipeline supports live yfinance pulls; static demo uses fixture data.",
+          "source": "yfinance",
+          "status": "not_run_for_public_fixture"
+        },
+        {
+          "detail": "Pipeline supports SEC CompanyFacts pulls; static demo uses fixture data.",
+          "source": "sec",
+          "status": "not_run_for_public_fixture"
+        }
+      ],
+      "latest_price": 189.51,
+      "market_cap_millions": 2910000,
+      "metrics": {
+        "debt_to_assets": 0.259,
+        "fcf_margin": 0.24,
+        "net_margin": 0.248,
+        "revenue_growth_yoy": 0.025
+      },
+      "missing_fields": [],
+      "name": "Apple Inc.",
+      "prices": [
+        {
+          "close": 136.08,
+          "date": "2024-01-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 140.37,
+          "date": "2024-02-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 144.42,
+          "date": "2024-03-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 147.94,
+          "date": "2024-04-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 150.71,
+          "date": "2024-05-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 152.61,
+          "date": "2024-06-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 153.64,
+          "date": "2024-07-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 153.9,
+          "date": "2024-08-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 153.63,
+          "date": "2024-09-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 153.13,
+          "date": "2024-10-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 152.74,
+          "date": "2024-11-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 152.8,
+          "date": "2024-12-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 153.61,
+          "date": "2025-01-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 155.34,
+          "date": "2025-02-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 158.06,
+          "date": "2025-03-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 161.71,
+          "date": "2025-04-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 166.08,
+          "date": "2025-05-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 170.88,
+          "date": "2025-06-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 175.73,
+          "date": "2025-07-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 180.25,
+          "date": "2025-08-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 184.08,
+          "date": "2025-09-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 186.97,
+          "date": "2025-10-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 188.78,
+          "date": "2025-11-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 189.51,
+          "date": "2025-12-28",
+          "source": "demo_fixture"
+        }
+      ],
+      "quarterly": [
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 20616,
+          "gross_margin": 0.378,
+          "net_income": 21371,
+          "operating_cash_flow": 26286,
+          "period": "2024 Q1",
+          "revenue": 90004,
+          "source": {
+            "free_cash_flow": {
+              "accession": "AAPL-2024-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2024-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2024-Q1-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2024-Q1-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2024-Q1-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 21474,
+          "gross_margin": 0.378,
+          "net_income": 22604,
+          "operating_cash_flow": 27381,
+          "period": "2024 Q2",
+          "revenue": 93754,
+          "source": {
+            "free_cash_flow": {
+              "accession": "AAPL-2024-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2024-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2024-Q2-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2024-Q2-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2024-Q2-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 22333,
+          "gross_margin": 0.378,
+          "net_income": 23864,
+          "operating_cash_flow": 28476,
+          "period": "2024 Q3",
+          "revenue": 97504,
+          "source": {
+            "free_cash_flow": {
+              "accession": "AAPL-2024-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2024-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2024-Q3-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2024-Q3-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2024-Q3-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 23192,
+          "gross_margin": 0.378,
+          "net_income": 25152,
+          "operating_cash_flow": 29571,
+          "period": "2024 Q4",
+          "revenue": 101255,
+          "source": {
+            "free_cash_flow": {
+              "accession": "AAPL-2024-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2024-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2024-Q4-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2024-Q4-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2024-Q4-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 22141,
+          "gross_margin": 0.384,
+          "net_income": 22302,
+          "operating_cash_flow": 27215,
+          "period": "2025 Q1",
+          "revenue": 92254,
+          "source": {
+            "free_cash_flow": {
+              "accession": "AAPL-2025-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2025-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2025-Q1-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2025-Q1-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2025-Q1-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 23064,
+          "gross_margin": 0.384,
+          "net_income": 23588,
+          "operating_cash_flow": 28349,
+          "period": "2025 Q2",
+          "revenue": 96098,
+          "source": {
+            "free_cash_flow": {
+              "accession": "AAPL-2025-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2025-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2025-Q2-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2025-Q2-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2025-Q2-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 23986,
+          "gross_margin": 0.384,
+          "net_income": 24903,
+          "operating_cash_flow": 29483,
+          "period": "2025 Q3",
+          "revenue": 99942,
+          "source": {
+            "free_cash_flow": {
+              "accession": "AAPL-2025-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2025-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2025-Q3-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2025-Q3-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2025-Q3-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 24909,
+          "gross_margin": 0.384,
+          "net_income": 26247,
+          "operating_cash_flow": 30617,
+          "period": "2025 Q4",
+          "revenue": 103786,
+          "source": {
+            "free_cash_flow": {
+              "accession": "AAPL-2025-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "AAPL-2025-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "AAPL-2025-Q4-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "AAPL-2025-Q4-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "AAPL-2025-Q4-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        }
+      ],
+      "sector": "Technology",
+      "ticker": "AAPL"
+    },
+    {
+      "annual": [
+        {
+          "assets": 154641,
+          "capital_expenditure": 9245,
+          "diluted_shares": 7460,
+          "fiscal_year": 2021,
+          "free_cash_flow": 60142,
+          "gross_margin": 0.36,
+          "liabilities": 89692,
+          "net_income": 56091,
+          "operating_cash_flow": 69387,
+          "period": "2021",
+          "revenue": 168088,
+          "source": {
+            "assets": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "Assets",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "derived",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "derived",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 26444
+        },
+        {
+          "assets": 178955,
+          "capital_expenditure": 11331,
+          "diluted_shares": 7259,
+          "fiscal_year": 2022,
+          "free_cash_flow": 63686,
+          "gross_margin": 0.366,
+          "liabilities": 100573,
+          "net_income": 61167,
+          "operating_cash_flow": 75017,
+          "period": "2022",
+          "revenue": 179854,
+          "source": {
+            "assets": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "Assets",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "derived",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "derived",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 29581
+        },
+        {
+          "assets": 223235,
+          "capital_expenditure": 11475,
+          "diluted_shares": 7057,
+          "fiscal_year": 2023,
+          "free_cash_flow": 76442,
+          "gross_margin": 0.372,
+          "liabilities": 121440,
+          "net_income": 72286,
+          "operating_cash_flow": 87917,
+          "period": "2023",
+          "revenue": 208631,
+          "source": {
+            "assets": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "Assets",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "derived",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "derived",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 35628
+        },
+        {
+          "assets": 272326,
+          "capital_expenditure": 14984,
+          "diluted_shares": 6856,
+          "fiscal_year": 2024,
+          "free_cash_flow": 86264,
+          "gross_margin": 0.378,
+          "liabilities": 143243,
+          "net_income": 83926,
+          "operating_cash_flow": 101248,
+          "period": "2024",
+          "revenue": 237839,
+          "source": {
+            "assets": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "Assets",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 41911
+        },
+        {
+          "assets": 322082,
+          "capital_expenditure": 14520,
+          "diluted_shares": 6654,
+          "fiscal_year": 2025,
+          "free_cash_flow": 99001,
+          "gross_margin": 0.384,
+          "liabilities": 169415,
+          "net_income": 94845,
+          "operating_cash_flow": 113521,
+          "period": "2025",
+          "revenue": 264001,
+          "source": {
+            "assets": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "Assets",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 49568
+        }
+      ],
+      "cik": "0000789019",
+      "data_freshness": {
+        "sec": "demo fixture shaped like SEC CompanyFacts output",
+        "yahoo": "demo fixture generated from approved sample universe"
+      },
+      "exchange": "NASDAQ",
+      "fetch_status": [
+        {
+          "detail": "Pipeline supports live yfinance pulls; static demo uses fixture data.",
+          "source": "yfinance",
+          "status": "not_run_for_public_fixture"
+        },
+        {
+          "detail": "Pipeline supports SEC CompanyFacts pulls; static demo uses fixture data.",
+          "source": "sec",
+          "status": "not_run_for_public_fixture"
+        }
+      ],
+      "latest_price": 422.14,
+      "market_cap_millions": 3135000,
+      "metrics": {
+        "debt_to_assets": 0.154,
+        "fcf_margin": 0.375,
+        "net_margin": 0.359,
+        "revenue_growth_yoy": 0.11
+      },
+      "missing_fields": [],
+      "name": "Microsoft Corporation",
+      "prices": [
+        {
+          "close": 303.12,
+          "date": "2024-01-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 312.68,
+          "date": "2024-02-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 321.69,
+          "date": "2024-03-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 329.53,
+          "date": "2024-04-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 335.71,
+          "date": "2024-05-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 339.94,
+          "date": "2024-06-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 342.22,
+          "date": "2024-07-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 342.81,
+          "date": "2024-08-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 342.21,
+          "date": "2024-09-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 341.09,
+          "date": "2024-10-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 340.23,
+          "date": "2024-11-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 340.37,
+          "date": "2024-12-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 342.16,
+          "date": "2025-01-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 346.01,
+          "date": "2025-02-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 352.08,
+          "date": "2025-03-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 360.21,
+          "date": "2025-04-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 369.95,
+          "date": "2025-05-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 380.64,
+          "date": "2025-06-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 391.44,
+          "date": "2025-07-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 401.51,
+          "date": "2025-08-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 410.05,
+          "date": "2025-09-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 416.49,
+          "date": "2025-10-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 420.51,
+          "date": "2025-11-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 422.14,
+          "date": "2025-12-28",
+          "source": "demo_fixture"
+        }
+      ],
+      "quarterly": [
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 20703,
+          "gross_margin": 0.378,
+          "net_income": 19639,
+          "operating_cash_flow": 24300,
+          "period": "2024 Q1",
+          "revenue": 57081,
+          "source": {
+            "free_cash_flow": {
+              "accession": "MSFT-2024-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2024-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2024-Q1-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2024-Q1-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2024-Q1-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 21566,
+          "gross_margin": 0.378,
+          "net_income": 20772,
+          "operating_cash_flow": 25312,
+          "period": "2024 Q2",
+          "revenue": 59460,
+          "source": {
+            "free_cash_flow": {
+              "accession": "MSFT-2024-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2024-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2024-Q2-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2024-Q2-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2024-Q2-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 22429,
+          "gross_margin": 0.378,
+          "net_income": 21930,
+          "operating_cash_flow": 26324,
+          "period": "2024 Q3",
+          "revenue": 61838,
+          "source": {
+            "free_cash_flow": {
+              "accession": "MSFT-2024-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2024-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2024-Q3-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2024-Q3-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2024-Q3-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 23291,
+          "gross_margin": 0.378,
+          "net_income": 23113,
+          "operating_cash_flow": 27337,
+          "period": "2024 Q4",
+          "revenue": 64217,
+          "source": {
+            "free_cash_flow": {
+              "accession": "MSFT-2024-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2024-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2024-Q4-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2024-Q4-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2024-Q4-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 23760,
+          "gross_margin": 0.384,
+          "net_income": 22194,
+          "operating_cash_flow": 27245,
+          "period": "2025 Q1",
+          "revenue": 63360,
+          "source": {
+            "free_cash_flow": {
+              "accession": "MSFT-2025-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2025-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2025-Q1-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2025-Q1-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2025-Q1-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 24750,
+          "gross_margin": 0.384,
+          "net_income": 23474,
+          "operating_cash_flow": 28380,
+          "period": "2025 Q2",
+          "revenue": 66000,
+          "source": {
+            "free_cash_flow": {
+              "accession": "MSFT-2025-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2025-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2025-Q2-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2025-Q2-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2025-Q2-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 25740,
+          "gross_margin": 0.384,
+          "net_income": 24783,
+          "operating_cash_flow": 29515,
+          "period": "2025 Q3",
+          "revenue": 68640,
+          "source": {
+            "free_cash_flow": {
+              "accession": "MSFT-2025-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2025-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2025-Q3-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2025-Q3-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2025-Q3-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 26730,
+          "gross_margin": 0.384,
+          "net_income": 26120,
+          "operating_cash_flow": 30651,
+          "period": "2025 Q4",
+          "revenue": 71280,
+          "source": {
+            "free_cash_flow": {
+              "accession": "MSFT-2025-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "MSFT-2025-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "MSFT-2025-Q4-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "MSFT-2025-Q4-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "MSFT-2025-Q4-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        }
+      ],
+      "sector": "Technology",
+      "ticker": "MSFT"
+    },
+    {
+      "annual": [
+        {
+          "assets": 237026,
+          "capital_expenditure": 14170,
+          "diluted_shares": 12850,
+          "fiscal_year": 2021,
+          "free_cash_flow": 72396,
+          "gross_margin": 0.36,
+          "liabilities": 137475,
+          "net_income": 59334,
+          "operating_cash_flow": 86566,
+          "period": "2021",
+          "revenue": 257637,
+          "source": {
+            "assets": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "Assets",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "derived",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "derived",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 12799
+        },
+        {
+          "assets": 279420,
+          "capital_expenditure": 17692,
+          "diluted_shares": 12503,
+          "fiscal_year": 2022,
+          "free_cash_flow": 77648,
+          "gross_margin": 0.366,
+          "liabilities": 157034,
+          "net_income": 65912,
+          "operating_cash_flow": 95340,
+          "period": "2022",
+          "revenue": 280824,
+          "source": {
+            "assets": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "Assets",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "derived",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "derived",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 14586
+        },
+        {
+          "assets": 342550,
+          "capital_expenditure": 17608,
+          "diluted_shares": 12156,
+          "fiscal_year": 2023,
+          "free_cash_flow": 92200,
+          "gross_margin": 0.372,
+          "liabilities": 186347,
+          "net_income": 76552,
+          "operating_cash_flow": 109808,
+          "period": "2023",
+          "revenue": 320140,
+          "source": {
+            "assets": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "Assets",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "derived",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "derived",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 17264
+        },
+        {
+          "assets": 414213,
+          "capital_expenditure": 22791,
+          "diluted_shares": 11809,
+          "fiscal_year": 2024,
+          "free_cash_flow": 102558,
+          "gross_margin": 0.378,
+          "liabilities": 217876,
+          "net_income": 88099,
+          "operating_cash_flow": 125349,
+          "period": "2024",
+          "revenue": 361758,
+          "source": {
+            "assets": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "Assets",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 20131
+        },
+        {
+          "assets": 489893,
+          "capital_expenditure": 22085,
+          "diluted_shares": 11462,
+          "fiscal_year": 2025,
+          "free_cash_flow": 118458,
+          "gross_margin": 0.384,
+          "liabilities": 257683,
+          "net_income": 99561,
+          "operating_cash_flow": 140543,
+          "period": "2025",
+          "revenue": 401551,
+          "source": {
+            "assets": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "Assets",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 23809
+        }
+      ],
+      "cik": "0001652044",
+      "data_freshness": {
+        "sec": "demo fixture shaped like SEC CompanyFacts output",
+        "yahoo": "demo fixture generated from approved sample universe"
+      },
+      "exchange": "NASDAQ",
+      "fetch_status": [
+        {
+          "detail": "Pipeline supports live yfinance pulls; static demo uses fixture data.",
+          "source": "yfinance",
+          "status": "not_run_for_public_fixture"
+        },
+        {
+          "detail": "Pipeline supports SEC CompanyFacts pulls; static demo uses fixture data.",
+          "source": "sec",
+          "status": "not_run_for_public_fixture"
+        }
+      ],
+      "latest_price": 169.46,
+      "market_cap_millions": 2140000,
+      "metrics": {
+        "debt_to_assets": 0.049,
+        "fcf_margin": 0.295,
+        "net_margin": 0.248,
+        "revenue_growth_yoy": 0.11
+      },
+      "missing_fields": [],
+      "name": "Alphabet Inc.",
+      "prices": [
+        {
+          "close": 121.68,
+          "date": "2024-01-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 125.52,
+          "date": "2024-02-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 129.14,
+          "date": "2024-03-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 132.28,
+          "date": "2024-04-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 134.76,
+          "date": "2024-05-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 136.46,
+          "date": "2024-06-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 137.38,
+          "date": "2024-07-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 137.61,
+          "date": "2024-08-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 137.37,
+          "date": "2024-09-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 136.92,
+          "date": "2024-10-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 136.58,
+          "date": "2024-11-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 136.63,
+          "date": "2024-12-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 137.35,
+          "date": "2025-01-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 138.9,
+          "date": "2025-02-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 141.33,
+          "date": "2025-03-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 144.6,
+          "date": "2025-04-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 148.51,
+          "date": "2025-05-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 152.8,
+          "date": "2025-06-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 157.14,
+          "date": "2025-07-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 161.17,
+          "date": "2025-08-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 164.6,
+          "date": "2025-09-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 167.19,
+          "date": "2025-10-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 168.8,
+          "date": "2025-11-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 169.46,
+          "date": "2025-12-28",
+          "source": "demo_fixture"
+        }
+      ],
+      "quarterly": [
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 24614,
+          "gross_margin": 0.378,
+          "net_income": 20615,
+          "operating_cash_flow": 30084,
+          "period": "2024 Q1",
+          "revenue": 86822,
+          "source": {
+            "free_cash_flow": {
+              "accession": "GOOGL-2024-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2024-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2024-Q1-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2024-Q1-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2024-Q1-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 25640,
+          "gross_margin": 0.378,
+          "net_income": 21805,
+          "operating_cash_flow": 31337,
+          "period": "2024 Q2",
+          "revenue": 90440,
+          "source": {
+            "free_cash_flow": {
+              "accession": "GOOGL-2024-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2024-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2024-Q2-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2024-Q2-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2024-Q2-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 26665,
+          "gross_margin": 0.378,
+          "net_income": 23020,
+          "operating_cash_flow": 32591,
+          "period": "2024 Q3",
+          "revenue": 94057,
+          "source": {
+            "free_cash_flow": {
+              "accession": "GOOGL-2024-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2024-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2024-Q3-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2024-Q3-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2024-Q3-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 27691,
+          "gross_margin": 0.378,
+          "net_income": 24262,
+          "operating_cash_flow": 33844,
+          "period": "2024 Q4",
+          "revenue": 97675,
+          "source": {
+            "free_cash_flow": {
+              "accession": "GOOGL-2024-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2024-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2024-Q4-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2024-Q4-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2024-Q4-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 28430,
+          "gross_margin": 0.384,
+          "net_income": 23297,
+          "operating_cash_flow": 33730,
+          "period": "2025 Q1",
+          "revenue": 96372,
+          "source": {
+            "free_cash_flow": {
+              "accession": "GOOGL-2025-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2025-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2025-Q1-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2025-Q1-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2025-Q1-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 29614,
+          "gross_margin": 0.384,
+          "net_income": 24641,
+          "operating_cash_flow": 35136,
+          "period": "2025 Q2",
+          "revenue": 100388,
+          "source": {
+            "free_cash_flow": {
+              "accession": "GOOGL-2025-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2025-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2025-Q2-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2025-Q2-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2025-Q2-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 30799,
+          "gross_margin": 0.384,
+          "net_income": 26015,
+          "operating_cash_flow": 36541,
+          "period": "2025 Q3",
+          "revenue": 104403,
+          "source": {
+            "free_cash_flow": {
+              "accession": "GOOGL-2025-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2025-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2025-Q3-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2025-Q3-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2025-Q3-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 31984,
+          "gross_margin": 0.384,
+          "net_income": 27419,
+          "operating_cash_flow": 37947,
+          "period": "2025 Q4",
+          "revenue": 108419,
+          "source": {
+            "free_cash_flow": {
+              "accession": "GOOGL-2025-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "GOOGL-2025-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "GOOGL-2025-Q4-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "GOOGL-2025-Q4-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "GOOGL-2025-Q4-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        }
+      ],
+      "sector": "Communication Services",
+      "ticker": "GOOGL"
+    },
+    {
+      "annual": [
+        {
+          "assets": 111917,
+          "capital_expenditure": 6691,
+          "diluted_shares": 2940,
+          "fiscal_year": 2021,
+          "free_cash_flow": 19002,
+          "gross_margin": null,
+          "liabilities": 64912,
+          "net_income": 36020,
+          "operating_cash_flow": 25692,
+          "period": "2021",
+          "revenue": 121649,
+          "source": {
+            "assets": {
+              "accession": "JPM-2021-fixture",
+              "concept": "Assets",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "JPM-2021-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "JPM-2021-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "JPM-2021-fixture",
+              "concept": "derived",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2021-fixture",
+              "concept": "derived",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "JPM-2021-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2021-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2021-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2021-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "JPM-2021-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 62450
+        },
+        {
+          "assets": 151301,
+          "capital_expenditure": 9580,
+          "diluted_shares": 2861,
+          "fiscal_year": 2022,
+          "free_cash_flow": 22870,
+          "gross_margin": null,
+          "liabilities": 85031,
+          "net_income": 45888,
+          "operating_cash_flow": 32450,
+          "period": "2022",
+          "revenue": 152061,
+          "source": {
+            "assets": {
+              "accession": "JPM-2022-fixture",
+              "concept": "Assets",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "JPM-2022-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "JPM-2022-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "JPM-2022-fixture",
+              "concept": "derived",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2022-fixture",
+              "concept": "derived",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "JPM-2022-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2022-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2022-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2022-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "JPM-2022-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 81612
+        },
+        {
+          "assets": 187111,
+          "capital_expenditure": 9618,
+          "diluted_shares": 2781,
+          "fiscal_year": 2023,
+          "free_cash_flow": 28084,
+          "gross_margin": null,
+          "liabilities": 101789,
+          "net_income": 53762,
+          "operating_cash_flow": 37702,
+          "period": "2023",
+          "revenue": 174870,
+          "source": {
+            "assets": {
+              "accession": "JPM-2023-fixture",
+              "concept": "Assets",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "JPM-2023-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "JPM-2023-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "JPM-2023-fixture",
+              "concept": "derived",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2023-fixture",
+              "concept": "derived",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "JPM-2023-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2023-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2023-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2023-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "JPM-2023-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 97448
+        },
+        {
+          "assets": 212240,
+          "capital_expenditure": 11678,
+          "diluted_shares": 2702,
+          "fiscal_year": 2024,
+          "free_cash_flow": 28694,
+          "gross_margin": null,
+          "liabilities": 111638,
+          "net_income": 58039,
+          "operating_cash_flow": 40372,
+          "period": "2024",
+          "revenue": 185363,
+          "source": {
+            "assets": {
+              "accession": "JPM-2024-fixture",
+              "concept": "Assets",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "JPM-2024-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "JPM-2024-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "JPM-2024-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2024-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "JPM-2024-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2024-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2024-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2024-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "JPM-2024-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 106587
+        },
+        {
+          "assets": 235188,
+          "capital_expenditure": 10603,
+          "diluted_shares": 2622,
+          "fiscal_year": 2025,
+          "free_cash_flow": 31808,
+          "gross_margin": null,
+          "liabilities": 123709,
+          "net_income": 61454,
+          "operating_cash_flow": 42411,
+          "period": "2025",
+          "revenue": 192777,
+          "source": {
+            "assets": {
+              "accession": "JPM-2025-fixture",
+              "concept": "Assets",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "JPM-2025-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "JPM-2025-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "JPM-2025-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2025-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "JPM-2025-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2025-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2025-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2025-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "JPM-2025-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 118111
+        }
+      ],
+      "cik": "0000019617",
+      "data_freshness": {
+        "sec": "demo fixture shaped like SEC CompanyFacts output",
+        "yahoo": "demo fixture generated from approved sample universe"
+      },
+      "exchange": "NYSE",
+      "fetch_status": [
+        {
+          "detail": "Pipeline supports live yfinance pulls; static demo uses fixture data.",
+          "source": "yfinance",
+          "status": "not_run_for_public_fixture"
+        },
+        {
+          "detail": "Pipeline supports SEC CompanyFacts pulls; static demo uses fixture data.",
+          "source": "sec",
+          "status": "not_run_for_public_fixture"
+        }
+      ],
+      "latest_price": 228.62,
+      "market_cap_millions": 657000,
+      "metrics": {
+        "debt_to_assets": 0.502,
+        "fcf_margin": 0.165,
+        "net_margin": 0.319,
+        "revenue_growth_yoy": 0.04
+      },
+      "missing_fields": [
+        "gross_margin"
+      ],
+      "name": "JPMorgan Chase & Co.",
+      "prices": [
+        {
+          "close": 164.16,
+          "date": "2024-01-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 169.34,
+          "date": "2024-02-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 174.22,
+          "date": "2024-03-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 178.47,
+          "date": "2024-04-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 181.81,
+          "date": "2024-05-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 184.1,
+          "date": "2024-06-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 185.34,
+          "date": "2024-07-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 185.66,
+          "date": "2024-08-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 185.33,
+          "date": "2024-09-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 184.72,
+          "date": "2024-10-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 184.26,
+          "date": "2024-11-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 184.33,
+          "date": "2024-12-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 185.3,
+          "date": "2025-01-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 187.39,
+          "date": "2025-02-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 190.68,
+          "date": "2025-03-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 195.08,
+          "date": "2025-04-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 200.36,
+          "date": "2025-05-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 206.14,
+          "date": "2025-06-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 211.99,
+          "date": "2025-07-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 217.44,
+          "date": "2025-08-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 222.07,
+          "date": "2025-09-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 225.56,
+          "date": "2025-10-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 227.74,
+          "date": "2025-11-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 228.62,
+          "date": "2025-12-28",
+          "source": "demo_fixture"
+        }
+      ],
+      "quarterly": [
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 6887,
+          "gross_margin": null,
+          "net_income": 13581,
+          "operating_cash_flow": 9689,
+          "period": "2024 Q1",
+          "revenue": 44487,
+          "source": {
+            "free_cash_flow": {
+              "accession": "JPM-2024-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2024-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2024-Q1-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2024-Q1-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2024-Q1-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 7174,
+          "gross_margin": null,
+          "net_income": 14365,
+          "operating_cash_flow": 10093,
+          "period": "2024 Q2",
+          "revenue": 46341,
+          "source": {
+            "free_cash_flow": {
+              "accession": "JPM-2024-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2024-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2024-Q2-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2024-Q2-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2024-Q2-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 7460,
+          "gross_margin": null,
+          "net_income": 15166,
+          "operating_cash_flow": 10497,
+          "period": "2024 Q3",
+          "revenue": 48194,
+          "source": {
+            "free_cash_flow": {
+              "accession": "JPM-2024-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2024-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2024-Q3-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2024-Q3-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2024-Q3-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 7747,
+          "gross_margin": null,
+          "net_income": 15984,
+          "operating_cash_flow": 10900,
+          "period": "2024 Q4",
+          "revenue": 50048,
+          "source": {
+            "free_cash_flow": {
+              "accession": "JPM-2024-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2024-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2024-Q4-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2024-Q4-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2024-Q4-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 7634,
+          "gross_margin": null,
+          "net_income": 14380,
+          "operating_cash_flow": 10179,
+          "period": "2025 Q1",
+          "revenue": 46266,
+          "source": {
+            "free_cash_flow": {
+              "accession": "JPM-2025-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2025-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2025-Q1-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2025-Q1-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2025-Q1-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 7952,
+          "gross_margin": null,
+          "net_income": 15210,
+          "operating_cash_flow": 10603,
+          "period": "2025 Q2",
+          "revenue": 48194,
+          "source": {
+            "free_cash_flow": {
+              "accession": "JPM-2025-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2025-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2025-Q2-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2025-Q2-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2025-Q2-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 8270,
+          "gross_margin": null,
+          "net_income": 16058,
+          "operating_cash_flow": 11027,
+          "period": "2025 Q3",
+          "revenue": 50122,
+          "source": {
+            "free_cash_flow": {
+              "accession": "JPM-2025-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2025-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2025-Q3-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2025-Q3-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2025-Q3-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 8588,
+          "gross_margin": null,
+          "net_income": 16924,
+          "operating_cash_flow": 11451,
+          "period": "2025 Q4",
+          "revenue": 52050,
+          "source": {
+            "free_cash_flow": {
+              "accession": "JPM-2025-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "JPM-2025-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "JPM-2025-Q4-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "JPM-2025-Q4-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "JPM-2025-Q4-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        }
+      ],
+      "sector": "Financials",
+      "ticker": "JPM"
+    },
+    {
+      "annual": [
+        {
+          "assets": 262789,
+          "capital_expenditure": 15710,
+          "diluted_shares": 4070,
+          "fiscal_year": 2021,
+          "free_cash_flow": 28164,
+          "gross_margin": 0.36,
+          "liabilities": 152418,
+          "net_income": 24165,
+          "operating_cash_flow": 43874,
+          "period": "2021",
+          "revenue": 285640,
+          "source": {
+            "assets": {
+              "accession": "XOM-2021-fixture",
+              "concept": "Assets",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "XOM-2021-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "XOM-2021-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "XOM-2021-fixture",
+              "concept": "derived",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2021-fixture",
+              "concept": "derived",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "XOM-2021-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2021-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2021-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2021-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "XOM-2021-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 33111
+        },
+        {
+          "assets": 270001,
+          "capital_expenditure": 17096,
+          "diluted_shares": 3960,
+          "fiscal_year": 2022,
+          "free_cash_flow": 25019,
+          "gross_margin": 0.366,
+          "liabilities": 151741,
+          "net_income": 23396,
+          "operating_cash_flow": 42115,
+          "period": "2022",
+          "revenue": 271358,
+          "source": {
+            "assets": {
+              "accession": "XOM-2022-fixture",
+              "concept": "Assets",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "XOM-2022-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "XOM-2022-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "XOM-2022-fixture",
+              "concept": "derived",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2022-fixture",
+              "concept": "derived",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "XOM-2022-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2022-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2022-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2022-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "XOM-2022-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 32886
+        },
+        {
+          "assets": 299064,
+          "capital_expenditure": 15372,
+          "diluted_shares": 3850,
+          "fiscal_year": 2023,
+          "free_cash_flow": 28453,
+          "gross_margin": 0.372,
+          "liabilities": 162691,
+          "net_income": 24551,
+          "operating_cash_flow": 43825,
+          "period": "2023",
+          "revenue": 279499,
+          "source": {
+            "assets": {
+              "accession": "XOM-2023-fixture",
+              "concept": "Assets",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "XOM-2023-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "XOM-2023-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "XOM-2023-fixture",
+              "concept": "derived",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2023-fixture",
+              "concept": "derived",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "XOM-2023-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2023-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2023-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2023-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "XOM-2023-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 35170
+        },
+        {
+          "assets": 328027,
+          "capital_expenditure": 18049,
+          "diluted_shares": 3740,
+          "fiscal_year": 2024,
+          "free_cash_flow": 27331,
+          "gross_margin": 0.378,
+          "liabilities": 172542,
+          "net_income": 25629,
+          "operating_cash_flow": 45379,
+          "period": "2024",
+          "revenue": 286486,
+          "source": {
+            "assets": {
+              "accession": "XOM-2024-fixture",
+              "concept": "Assets",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "XOM-2024-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "XOM-2024-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "XOM-2024-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2024-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "XOM-2024-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2024-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2024-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2024-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "XOM-2024-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 37198
+        },
+        {
+          "assets": 356503,
+          "capital_expenditure": 16072,
+          "diluted_shares": 3630,
+          "fiscal_year": 2025,
+          "free_cash_flow": 30683,
+          "gross_margin": 0.384,
+          "liabilities": 187521,
+          "net_income": 26615,
+          "operating_cash_flow": 46755,
+          "period": "2025",
+          "revenue": 292216,
+          "source": {
+            "assets": {
+              "accession": "XOM-2025-fixture",
+              "concept": "Assets",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "capital_expenditure": {
+              "accession": "XOM-2025-fixture",
+              "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "diluted_shares": {
+              "accession": "XOM-2025-fixture",
+              "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "shares_millions"
+            },
+            "free_cash_flow": {
+              "accession": "XOM-2025-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2025-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "liabilities": {
+              "accession": "XOM-2025-fixture",
+              "concept": "Liabilities",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2025-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2025-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2025-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "total_debt": {
+              "accession": "XOM-2025-fixture",
+              "concept": "LongTermDebt",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          },
+          "total_debt": 40427
+        }
+      ],
+      "cik": "0000034088",
+      "data_freshness": {
+        "sec": "demo fixture shaped like SEC CompanyFacts output",
+        "yahoo": "demo fixture generated from approved sample universe"
+      },
+      "exchange": "NYSE",
+      "fetch_status": [
+        {
+          "detail": "Pipeline supports live yfinance pulls; static demo uses fixture data.",
+          "source": "yfinance",
+          "status": "not_run_for_public_fixture"
+        },
+        {
+          "detail": "Pipeline supports SEC CompanyFacts pulls; static demo uses fixture data.",
+          "source": "sec",
+          "status": "not_run_for_public_fixture"
+        }
+      ],
+      "latest_price": 117.32,
+      "market_cap_millions": 469000,
+      "metrics": {
+        "debt_to_assets": 0.113,
+        "fcf_margin": 0.105,
+        "net_margin": 0.091,
+        "revenue_growth_yoy": 0.02
+      },
+      "missing_fields": [],
+      "name": "Exxon Mobil Corporation",
+      "prices": [
+        {
+          "close": 84.24,
+          "date": "2024-01-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 86.9,
+          "date": "2024-02-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 89.4,
+          "date": "2024-03-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 91.58,
+          "date": "2024-04-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 93.3,
+          "date": "2024-05-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 94.47,
+          "date": "2024-06-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 95.11,
+          "date": "2024-07-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 95.27,
+          "date": "2024-08-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 95.1,
+          "date": "2024-09-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 94.79,
+          "date": "2024-10-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 94.55,
+          "date": "2024-11-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 94.59,
+          "date": "2024-12-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 95.09,
+          "date": "2025-01-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 96.16,
+          "date": "2025-02-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 97.85,
+          "date": "2025-03-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 100.11,
+          "date": "2025-04-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 102.81,
+          "date": "2025-05-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 105.78,
+          "date": "2025-06-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 108.79,
+          "date": "2025-07-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 111.58,
+          "date": "2025-08-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 113.96,
+          "date": "2025-09-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 115.75,
+          "date": "2025-10-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 116.86,
+          "date": "2025-11-28",
+          "source": "demo_fixture"
+        },
+        {
+          "close": 117.32,
+          "date": "2025-12-28",
+          "source": "demo_fixture"
+        }
+      ],
+      "quarterly": [
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 6559,
+          "gross_margin": 0.378,
+          "net_income": 5997,
+          "operating_cash_flow": 10891,
+          "period": "2024 Q1",
+          "revenue": 68757,
+          "source": {
+            "free_cash_flow": {
+              "accession": "XOM-2024-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2024-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2024-Q1-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2024-Q1-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2024-Q1-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 6833,
+          "gross_margin": 0.378,
+          "net_income": 6343,
+          "operating_cash_flow": 11345,
+          "period": "2024 Q2",
+          "revenue": 71622,
+          "source": {
+            "free_cash_flow": {
+              "accession": "XOM-2024-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2024-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2024-Q2-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2024-Q2-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2024-Q2-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 7106,
+          "gross_margin": 0.378,
+          "net_income": 6697,
+          "operating_cash_flow": 11799,
+          "period": "2024 Q3",
+          "revenue": 74486,
+          "source": {
+            "free_cash_flow": {
+              "accession": "XOM-2024-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2024-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2024-Q3-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2024-Q3-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2024-Q3-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2024,
+          "free_cash_flow": 7379,
+          "gross_margin": 0.378,
+          "net_income": 7058,
+          "operating_cash_flow": 12252,
+          "period": "2024 Q4",
+          "revenue": 77351,
+          "source": {
+            "free_cash_flow": {
+              "accession": "XOM-2024-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2024-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2024-Q4-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2024-Q4-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2024-Q4-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2025-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 7364,
+          "gross_margin": 0.384,
+          "net_income": 6228,
+          "operating_cash_flow": 11221,
+          "period": "2025 Q1",
+          "revenue": 70132,
+          "source": {
+            "free_cash_flow": {
+              "accession": "XOM-2025-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2025-Q1-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2025-Q1-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2025-Q1-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2025-Q1-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 7671,
+          "gross_margin": 0.384,
+          "net_income": 6587,
+          "operating_cash_flow": 11689,
+          "period": "2025 Q2",
+          "revenue": 73054,
+          "source": {
+            "free_cash_flow": {
+              "accession": "XOM-2025-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2025-Q2-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2025-Q2-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2025-Q2-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2025-Q2-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 7978,
+          "gross_margin": 0.384,
+          "net_income": 6954,
+          "operating_cash_flow": 12156,
+          "period": "2025 Q3",
+          "revenue": 75976,
+          "source": {
+            "free_cash_flow": {
+              "accession": "XOM-2025-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2025-Q3-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2025-Q3-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2025-Q3-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2025-Q3-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        },
+        {
+          "fiscal_year": 2025,
+          "free_cash_flow": 8284,
+          "gross_margin": 0.384,
+          "net_income": 7330,
+          "operating_cash_flow": 12624,
+          "period": "2025 Q4",
+          "revenue": 78898,
+          "source": {
+            "free_cash_flow": {
+              "accession": "XOM-2025-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "gross_margin": {
+              "accession": "XOM-2025-Q4-fixture",
+              "concept": "derived",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "net_income": {
+              "accession": "XOM-2025-Q4-fixture",
+              "concept": "NetIncomeLoss",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "operating_cash_flow": {
+              "accession": "XOM-2025-Q4-fixture",
+              "concept": "NetCashProvidedByUsedInOperatingActivities",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "revenue": {
+              "accession": "XOM-2025-Q4-fixture",
+              "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "filed_at": "2026-02-15",
+              "form": "10-Q",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            }
+          }
+        }
+      ],
+      "sector": "Energy",
+      "ticker": "XOM"
+    }
+  ],
+  "currency": "USD",
+  "dataset_mode": "demo_fixture",
+  "generated_at": "2026-05-07T23:48:51.238661+00:00",
+  "scale": "millions",
+  "sources": [
+    {
+      "name": "Yahoo Finance via yfinance",
+      "role": "prices, current quote/profile, analyst and holder convenience source",
+      "url": "https://pypi.org/project/yfinance/"
+    },
+    {
+      "name": "SEC EDGAR CompanyFacts",
+      "role": "filed historical fundamentals and provenance",
+      "url": "https://www.sec.gov/edgar/sec-api-documentation"
+    }
+  ],
+  "universe": [
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "JPM",
+    "XOM"
+  ],
+  "warnings": [
+    "Static review build uses demo fixture data, not private watchlist data.",
+    "Prototype is for research workflow review, not investment advice.",
+    "Yahoo/yfinance data use should remain personal/research and terms-aware."
+  ]
+}
