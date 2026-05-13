@@ -133,6 +133,18 @@ button:focus-visible {
   outline: 3px solid oklch(45% 0.15 248 / 0.2);
 }
 
+.download-link {
+  display: inline-grid;
+  place-items: center;
+  min-height: 42px;
+  border-radius: 8px;
+  background: var(--blue);
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 950;
+  text-decoration: none;
+}
+
 .universe-list {
   display: grid;
   gap: 8px;
@@ -213,6 +225,13 @@ button:focus-visible {
 .compare-control {
   display: grid;
   gap: 8px;
+}
+
+.filter-row {
+  display: grid;
+  grid-template-columns: auto minmax(150px, 210px) auto minmax(150px, 210px);
+  gap: 8px;
+  align-items: center;
 }
 
 .demo-notice {
@@ -448,6 +467,31 @@ td {
   font-weight: 800;
 }
 
+tr {
+  scroll-margin-top: 16px;
+}
+
+.screener-table tbody tr {
+  cursor: pointer;
+}
+
+.screener-table tbody tr:hover,
+.screener-table tbody tr:focus {
+  background: oklch(92% 0.04 245);
+  outline: none;
+}
+
+tr[data-ticker] td:first-child {
+  color: var(--blue);
+  font-weight: 950;
+}
+
+td:last-child {
+  max-width: 420px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .app-footer {
   color: var(--muted);
   font-size: 0.78rem;
@@ -492,6 +536,11 @@ td {
     grid-template-columns: 1fr;
   }
 
+  .filter-row {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
   .trend-chart {
     height: 280px;
   }
@@ -502,4 +551,3 @@ td {
     scroll-behavior: auto !important;
   }
 }
-

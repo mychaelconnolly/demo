@@ -5,6 +5,8 @@
         {
           "assets": 336552,
           "capital_expenditure": 20120,
+          "current_assets": 127890,
+          "current_liabilities": 60512,
           "diluted_shares": 16350,
           "fiscal_year": 2021,
           "free_cash_flow": 83479,
@@ -26,6 +28,22 @@
             "capital_expenditure": {
               "accession": "AAPL-2021-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "AAPL-2021-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2022-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -101,6 +119,8 @@
         {
           "assets": 353796,
           "capital_expenditure": 22401,
+          "current_assets": 134443,
+          "current_liabilities": 61638,
           "diluted_shares": 15909,
           "fiscal_year": 2022,
           "free_cash_flow": 79346,
@@ -122,6 +142,22 @@
             "capital_expenditure": {
               "accession": "AAPL-2022-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "AAPL-2022-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2023-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -197,6 +233,8 @@
         {
           "assets": 388074,
           "capital_expenditure": 19948,
+          "current_assets": 147468,
+          "current_liabilities": 65445,
           "diluted_shares": 15467,
           "fiscal_year": 2023,
           "free_cash_flow": 84905,
@@ -218,6 +256,22 @@
             "capital_expenditure": {
               "accession": "AAPL-2023-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "AAPL-2023-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2024-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -293,6 +347,8 @@
         {
           "assets": 429394,
           "capital_expenditure": 23626,
+          "current_assets": 163170,
+          "current_liabilities": 70017,
           "diluted_shares": 15026,
           "fiscal_year": 2024,
           "free_cash_flow": 85898,
@@ -314,6 +370,22 @@
             "capital_expenditure": {
               "accession": "AAPL-2024-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "AAPL-2024-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2025-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -389,6 +461,8 @@
         {
           "assets": 468959,
           "capital_expenditure": 21142,
+          "current_assets": 178204,
+          "current_liabilities": 76468,
           "diluted_shares": 14584,
           "fiscal_year": 2025,
           "free_cash_flow": 92254,
@@ -410,6 +484,22 @@
             "capital_expenditure": {
               "accession": "AAPL-2025-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "AAPL-2025-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2026-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -501,13 +591,21 @@
           "status": "not_run_for_public_fixture"
         }
       ],
+      "issue_count": 0,
+      "issue_flags": [],
       "latest_price": 189.51,
       "market_cap_millions": 2910000,
       "metrics": {
+        "current_ratio": 2.33,
         "debt_to_assets": 0.259,
+        "debt_to_equity": 0.547,
         "fcf_margin": 0.24,
+        "fcf_yield": 0.032,
         "net_margin": 0.248,
-        "revenue_growth_yoy": 0.025
+        "price_return": 0.393,
+        "revenue_cagr_3y": 0.026,
+        "revenue_growth_yoy": 0.025,
+        "share_dilution": -0.029
       },
       "missing_fields": [],
       "name": "Apple Inc.",
@@ -1043,6 +1141,140 @@
           }
         }
       ],
+      "sec_concepts": [
+        {
+          "concept": "Assets",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "assets",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "capital_expenditure",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "AssetsCurrent",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "current_assets",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "LiabilitiesCurrent",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "current_liabilities",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "diluted_shares",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "shares_millions"
+        },
+        {
+          "concept": "derived",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "free_cash_flow",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "derived",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "gross_margin",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "Liabilities",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "liabilities",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "NetIncomeLoss",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "net_income",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "operating_cash_flow",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "revenue",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "LongTermDebt",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "total_debt",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "AAPL",
+          "unit": "USD_millions"
+        }
+      ],
       "sector": "Technology",
       "ticker": "AAPL"
     },
@@ -1051,6 +1283,8 @@
         {
           "assets": 154641,
           "capital_expenditure": 9245,
+          "current_assets": 58764,
+          "current_liabilities": 27804,
           "diluted_shares": 7460,
           "fiscal_year": 2021,
           "free_cash_flow": 60142,
@@ -1072,6 +1306,22 @@
             "capital_expenditure": {
               "accession": "MSFT-2021-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "MSFT-2021-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2022-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -1147,6 +1397,8 @@
         {
           "assets": 178955,
           "capital_expenditure": 11331,
+          "current_assets": 68003,
+          "current_liabilities": 31178,
           "diluted_shares": 7259,
           "fiscal_year": 2022,
           "free_cash_flow": 63686,
@@ -1168,6 +1420,22 @@
             "capital_expenditure": {
               "accession": "MSFT-2022-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "MSFT-2022-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2023-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -1243,6 +1511,8 @@
         {
           "assets": 223235,
           "capital_expenditure": 11475,
+          "current_assets": 84829,
+          "current_liabilities": 37646,
           "diluted_shares": 7057,
           "fiscal_year": 2023,
           "free_cash_flow": 76442,
@@ -1264,6 +1534,22 @@
             "capital_expenditure": {
               "accession": "MSFT-2023-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "MSFT-2023-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2024-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -1339,6 +1625,8 @@
         {
           "assets": 272326,
           "capital_expenditure": 14984,
+          "current_assets": 103484,
+          "current_liabilities": 44405,
           "diluted_shares": 6856,
           "fiscal_year": 2024,
           "free_cash_flow": 86264,
@@ -1360,6 +1648,22 @@
             "capital_expenditure": {
               "accession": "MSFT-2024-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "MSFT-2024-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2025-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -1435,6 +1739,8 @@
         {
           "assets": 322082,
           "capital_expenditure": 14520,
+          "current_assets": 122391,
+          "current_liabilities": 52519,
           "diluted_shares": 6654,
           "fiscal_year": 2025,
           "free_cash_flow": 99001,
@@ -1456,6 +1762,22 @@
             "capital_expenditure": {
               "accession": "MSFT-2025-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "MSFT-2025-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2026-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -1547,13 +1869,21 @@
           "status": "not_run_for_public_fixture"
         }
       ],
+      "issue_count": 0,
+      "issue_flags": [],
       "latest_price": 422.14,
       "market_cap_millions": 3135000,
       "metrics": {
+        "current_ratio": 2.33,
         "debt_to_assets": 0.154,
+        "debt_to_equity": 0.325,
         "fcf_margin": 0.375,
+        "fcf_yield": 0.032,
         "net_margin": 0.359,
-        "revenue_growth_yoy": 0.11
+        "price_return": 0.393,
+        "revenue_cagr_3y": 0.136,
+        "revenue_growth_yoy": 0.11,
+        "share_dilution": -0.029
       },
       "missing_fields": [],
       "name": "Microsoft Corporation",
@@ -2089,6 +2419,140 @@
           }
         }
       ],
+      "sec_concepts": [
+        {
+          "concept": "Assets",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "assets",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "capital_expenditure",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "AssetsCurrent",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "current_assets",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "LiabilitiesCurrent",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "current_liabilities",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "diluted_shares",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "shares_millions"
+        },
+        {
+          "concept": "derived",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "free_cash_flow",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "derived",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "gross_margin",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "Liabilities",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "liabilities",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "NetIncomeLoss",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "net_income",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "operating_cash_flow",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "revenue",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "LongTermDebt",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "total_debt",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "MSFT",
+          "unit": "USD_millions"
+        }
+      ],
       "sector": "Technology",
       "ticker": "MSFT"
     },
@@ -2097,6 +2561,8 @@
         {
           "assets": 237026,
           "capital_expenditure": 14170,
+          "current_assets": 90070,
+          "current_liabilities": 42617,
           "diluted_shares": 12850,
           "fiscal_year": 2021,
           "free_cash_flow": 72396,
@@ -2118,6 +2584,22 @@
             "capital_expenditure": {
               "accession": "GOOGL-2021-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "GOOGL-2021-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2022-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -2193,6 +2675,8 @@
         {
           "assets": 279420,
           "capital_expenditure": 17692,
+          "current_assets": 106180,
+          "current_liabilities": 48681,
           "diluted_shares": 12503,
           "fiscal_year": 2022,
           "free_cash_flow": 77648,
@@ -2214,6 +2698,22 @@
             "capital_expenditure": {
               "accession": "GOOGL-2022-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "GOOGL-2022-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2023-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -2289,6 +2789,8 @@
         {
           "assets": 342550,
           "capital_expenditure": 17608,
+          "current_assets": 130169,
+          "current_liabilities": 57768,
           "diluted_shares": 12156,
           "fiscal_year": 2023,
           "free_cash_flow": 92200,
@@ -2310,6 +2812,22 @@
             "capital_expenditure": {
               "accession": "GOOGL-2023-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "GOOGL-2023-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2024-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -2385,6 +2903,8 @@
         {
           "assets": 414213,
           "capital_expenditure": 22791,
+          "current_assets": 157401,
+          "current_liabilities": 67542,
           "diluted_shares": 11809,
           "fiscal_year": 2024,
           "free_cash_flow": 102558,
@@ -2406,6 +2926,22 @@
             "capital_expenditure": {
               "accession": "GOOGL-2024-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "GOOGL-2024-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2025-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -2481,6 +3017,8 @@
         {
           "assets": 489893,
           "capital_expenditure": 22085,
+          "current_assets": 186159,
+          "current_liabilities": 79882,
           "diluted_shares": 11462,
           "fiscal_year": 2025,
           "free_cash_flow": 118458,
@@ -2502,6 +3040,22 @@
             "capital_expenditure": {
               "accession": "GOOGL-2025-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "GOOGL-2025-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2026-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -2593,13 +3147,21 @@
           "status": "not_run_for_public_fixture"
         }
       ],
+      "issue_count": 0,
+      "issue_flags": [],
       "latest_price": 169.46,
       "market_cap_millions": 2140000,
       "metrics": {
+        "current_ratio": 2.33,
         "debt_to_assets": 0.049,
+        "debt_to_equity": 0.103,
         "fcf_margin": 0.295,
+        "fcf_yield": 0.055,
         "net_margin": 0.248,
-        "revenue_growth_yoy": 0.11
+        "price_return": 0.393,
+        "revenue_cagr_3y": 0.127,
+        "revenue_growth_yoy": 0.11,
+        "share_dilution": -0.029
       },
       "missing_fields": [],
       "name": "Alphabet Inc.",
@@ -3135,6 +3697,140 @@
           }
         }
       ],
+      "sec_concepts": [
+        {
+          "concept": "Assets",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "assets",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "capital_expenditure",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "AssetsCurrent",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "current_assets",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "LiabilitiesCurrent",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "current_liabilities",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "diluted_shares",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "shares_millions"
+        },
+        {
+          "concept": "derived",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "free_cash_flow",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "derived",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "gross_margin",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "Liabilities",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "liabilities",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "NetIncomeLoss",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "net_income",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "operating_cash_flow",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "revenue",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "LongTermDebt",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "total_debt",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "GOOGL",
+          "unit": "USD_millions"
+        }
+      ],
       "sector": "Communication Services",
       "ticker": "GOOGL"
     },
@@ -3143,6 +3839,8 @@
         {
           "assets": 111917,
           "capital_expenditure": 6691,
+          "current_assets": 42528,
+          "current_liabilities": 20123,
           "diluted_shares": 2940,
           "fiscal_year": 2021,
           "free_cash_flow": 19002,
@@ -3164,6 +3862,22 @@
             "capital_expenditure": {
               "accession": "JPM-2021-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "JPM-2021-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "JPM-2021-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2022-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -3239,6 +3953,8 @@
         {
           "assets": 151301,
           "capital_expenditure": 9580,
+          "current_assets": 57494,
+          "current_liabilities": 26360,
           "diluted_shares": 2861,
           "fiscal_year": 2022,
           "free_cash_flow": 22870,
@@ -3260,6 +3976,22 @@
             "capital_expenditure": {
               "accession": "JPM-2022-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "JPM-2022-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "JPM-2022-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2023-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -3335,6 +4067,8 @@
         {
           "assets": 187111,
           "capital_expenditure": 9618,
+          "current_assets": 71102,
+          "current_liabilities": 31554,
           "diluted_shares": 2781,
           "fiscal_year": 2023,
           "free_cash_flow": 28084,
@@ -3356,6 +4090,22 @@
             "capital_expenditure": {
               "accession": "JPM-2023-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "JPM-2023-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "JPM-2023-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2024-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -3431,6 +4181,8 @@
         {
           "assets": 212240,
           "capital_expenditure": 11678,
+          "current_assets": 80651,
+          "current_liabilities": 34608,
           "diluted_shares": 2702,
           "fiscal_year": 2024,
           "free_cash_flow": 28694,
@@ -3452,6 +4204,22 @@
             "capital_expenditure": {
               "accession": "JPM-2024-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "JPM-2024-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "JPM-2024-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2025-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -3527,6 +4295,8 @@
         {
           "assets": 235188,
           "capital_expenditure": 10603,
+          "current_assets": 89371,
+          "current_liabilities": 38350,
           "diluted_shares": 2622,
           "fiscal_year": 2025,
           "free_cash_flow": 31808,
@@ -3548,6 +4318,22 @@
             "capital_expenditure": {
               "accession": "JPM-2025-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "JPM-2025-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "JPM-2025-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2026-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -3639,13 +4425,24 @@
           "status": "not_run_for_public_fixture"
         }
       ],
+      "issue_count": 2,
+      "issue_flags": [
+        "missing required facts: gross_margin",
+        "high leverage"
+      ],
       "latest_price": 228.62,
       "market_cap_millions": 657000,
       "metrics": {
+        "current_ratio": 2.33,
         "debt_to_assets": 0.502,
+        "debt_to_equity": 1.059,
         "fcf_margin": 0.165,
+        "fcf_yield": 0.048,
         "net_margin": 0.319,
-        "revenue_growth_yoy": 0.04
+        "price_return": 0.393,
+        "revenue_cagr_3y": 0.082,
+        "revenue_growth_yoy": 0.04,
+        "share_dilution": -0.03
       },
       "missing_fields": [
         "gross_margin"
@@ -4183,6 +4980,140 @@
           }
         }
       ],
+      "sec_concepts": [
+        {
+          "concept": "Assets",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "assets",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "capital_expenditure",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "AssetsCurrent",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "current_assets",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "LiabilitiesCurrent",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "current_liabilities",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "diluted_shares",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "shares_millions"
+        },
+        {
+          "concept": "derived",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "free_cash_flow",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "derived",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "gross_margin",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "Liabilities",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "liabilities",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "NetIncomeLoss",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "net_income",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "operating_cash_flow",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "revenue",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "LongTermDebt",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "total_debt",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "JPM",
+          "unit": "USD_millions"
+        }
+      ],
       "sector": "Financials",
       "ticker": "JPM"
     },
@@ -4191,6 +5122,8 @@
         {
           "assets": 262789,
           "capital_expenditure": 15710,
+          "current_assets": 99860,
+          "current_liabilities": 47249,
           "diluted_shares": 4070,
           "fiscal_year": 2021,
           "free_cash_flow": 28164,
@@ -4212,6 +5145,22 @@
             "capital_expenditure": {
               "accession": "XOM-2021-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "XOM-2021-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2022-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "XOM-2021-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2022-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -4287,6 +5236,8 @@
         {
           "assets": 270001,
           "capital_expenditure": 17096,
+          "current_assets": 102600,
+          "current_liabilities": 47040,
           "diluted_shares": 3960,
           "fiscal_year": 2022,
           "free_cash_flow": 25019,
@@ -4308,6 +5259,22 @@
             "capital_expenditure": {
               "accession": "XOM-2022-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "XOM-2022-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2023-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "XOM-2022-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2023-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -4383,6 +5350,8 @@
         {
           "assets": 299064,
           "capital_expenditure": 15372,
+          "current_assets": 113644,
+          "current_liabilities": 50434,
           "diluted_shares": 3850,
           "fiscal_year": 2023,
           "free_cash_flow": 28453,
@@ -4404,6 +5373,22 @@
             "capital_expenditure": {
               "accession": "XOM-2023-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "XOM-2023-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2024-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "XOM-2023-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2024-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -4479,6 +5464,8 @@
         {
           "assets": 328027,
           "capital_expenditure": 18049,
+          "current_assets": 124650,
+          "current_liabilities": 53488,
           "diluted_shares": 3740,
           "fiscal_year": 2024,
           "free_cash_flow": 27331,
@@ -4500,6 +5487,22 @@
             "capital_expenditure": {
               "accession": "XOM-2024-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "XOM-2024-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2025-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "XOM-2024-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2025-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -4575,6 +5578,8 @@
         {
           "assets": 356503,
           "capital_expenditure": 16072,
+          "current_assets": 135471,
+          "current_liabilities": 58131,
           "diluted_shares": 3630,
           "fiscal_year": 2025,
           "free_cash_flow": 30683,
@@ -4596,6 +5601,22 @@
             "capital_expenditure": {
               "accession": "XOM-2025-fixture",
               "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_assets": {
+              "accession": "XOM-2025-fixture",
+              "concept": "AssetsCurrent",
+              "filed_at": "2026-02-15",
+              "form": "10-K",
+              "source": "demo_fixture",
+              "unit": "USD_millions"
+            },
+            "current_liabilities": {
+              "accession": "XOM-2025-fixture",
+              "concept": "LiabilitiesCurrent",
               "filed_at": "2026-02-15",
               "form": "10-K",
               "source": "demo_fixture",
@@ -4687,13 +5708,21 @@
           "status": "not_run_for_public_fixture"
         }
       ],
+      "issue_count": 0,
+      "issue_flags": [],
       "latest_price": 117.32,
       "market_cap_millions": 469000,
       "metrics": {
+        "current_ratio": 2.33,
         "debt_to_assets": 0.113,
+        "debt_to_equity": 0.239,
         "fcf_margin": 0.105,
+        "fcf_yield": 0.065,
         "net_margin": 0.091,
-        "revenue_growth_yoy": 0.02
+        "price_return": 0.393,
+        "revenue_cagr_3y": 0.025,
+        "revenue_growth_yoy": 0.02,
+        "share_dilution": -0.029
       },
       "missing_fields": [],
       "name": "Exxon Mobil Corporation",
@@ -5229,14 +6258,256 @@
           }
         }
       ],
+      "sec_concepts": [
+        {
+          "concept": "Assets",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "assets",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "capital_expenditure",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "AssetsCurrent",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "current_assets",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "LiabilitiesCurrent",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "current_liabilities",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "WeightedAverageNumberOfDilutedSharesOutstanding",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "diluted_shares",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "shares_millions"
+        },
+        {
+          "concept": "derived",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "free_cash_flow",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "derived",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "gross_margin",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "Liabilities",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "liabilities",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "NetIncomeLoss",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "net_income",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "operating_cash_flow",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "forms": "10-K, 10-Q",
+          "latest_filed_at": "2026-02-15",
+          "metric": "revenue",
+          "period_count": 13,
+          "periods": "2024 Q4, 2025, 2025 Q1, 2025 Q2, 2025 Q3, 2025 Q4",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        },
+        {
+          "concept": "LongTermDebt",
+          "forms": "10-K",
+          "latest_filed_at": "2026-02-15",
+          "metric": "total_debt",
+          "period_count": 5,
+          "periods": "2021, 2022, 2023, 2024, 2025",
+          "source": "demo_fixture",
+          "ticker": "XOM",
+          "unit": "USD_millions"
+        }
+      ],
       "sector": "Energy",
       "ticker": "XOM"
     }
   ],
   "currency": "USD",
   "dataset_mode": "demo_fixture",
-  "generated_at": "2026-05-07T23:48:51.238661+00:00",
+  "generated_at": "2026-05-13T14:31:47.512827+00:00",
   "scale": "millions",
+  "scored_at": "2026-05-13T14:31:47.513426+00:00",
+  "screener": [
+    {
+      "current_ratio": 2.33,
+      "debt_to_assets": 0.502,
+      "debt_to_equity": 1.059,
+      "fcf_margin": 0.165,
+      "fcf_yield": 0.048,
+      "free_cash_flow": 31808,
+      "issue_count": 2,
+      "issue_flags": "missing required facts: gross_margin; high leverage",
+      "latest_price": 228.62,
+      "market_cap_millions": 657000,
+      "name": "JPMorgan Chase & Co.",
+      "net_margin": 0.319,
+      "price_return": 0.393,
+      "revenue": 192777,
+      "revenue_cagr_3y": 0.082,
+      "revenue_growth_yoy": 0.04,
+      "sector": "Financials",
+      "share_dilution": -0.03,
+      "ticker": "JPM"
+    },
+    {
+      "current_ratio": 2.33,
+      "debt_to_assets": 0.259,
+      "debt_to_equity": 0.547,
+      "fcf_margin": 0.24,
+      "fcf_yield": 0.032,
+      "free_cash_flow": 92254,
+      "issue_count": 0,
+      "issue_flags": "",
+      "latest_price": 189.51,
+      "market_cap_millions": 2910000,
+      "name": "Apple Inc.",
+      "net_margin": 0.248,
+      "price_return": 0.393,
+      "revenue": 384392,
+      "revenue_cagr_3y": 0.026,
+      "revenue_growth_yoy": 0.025,
+      "sector": "Technology",
+      "share_dilution": -0.029,
+      "ticker": "AAPL"
+    },
+    {
+      "current_ratio": 2.33,
+      "debt_to_assets": 0.049,
+      "debt_to_equity": 0.103,
+      "fcf_margin": 0.295,
+      "fcf_yield": 0.055,
+      "free_cash_flow": 118458,
+      "issue_count": 0,
+      "issue_flags": "",
+      "latest_price": 169.46,
+      "market_cap_millions": 2140000,
+      "name": "Alphabet Inc.",
+      "net_margin": 0.248,
+      "price_return": 0.393,
+      "revenue": 401551,
+      "revenue_cagr_3y": 0.127,
+      "revenue_growth_yoy": 0.11,
+      "sector": "Communication Services",
+      "share_dilution": -0.029,
+      "ticker": "GOOGL"
+    },
+    {
+      "current_ratio": 2.33,
+      "debt_to_assets": 0.154,
+      "debt_to_equity": 0.325,
+      "fcf_margin": 0.375,
+      "fcf_yield": 0.032,
+      "free_cash_flow": 99001,
+      "issue_count": 0,
+      "issue_flags": "",
+      "latest_price": 422.14,
+      "market_cap_millions": 3135000,
+      "name": "Microsoft Corporation",
+      "net_margin": 0.359,
+      "price_return": 0.393,
+      "revenue": 264001,
+      "revenue_cagr_3y": 0.136,
+      "revenue_growth_yoy": 0.11,
+      "sector": "Technology",
+      "share_dilution": -0.029,
+      "ticker": "MSFT"
+    },
+    {
+      "current_ratio": 2.33,
+      "debt_to_assets": 0.113,
+      "debt_to_equity": 0.239,
+      "fcf_margin": 0.105,
+      "fcf_yield": 0.065,
+      "free_cash_flow": 30683,
+      "issue_count": 0,
+      "issue_flags": "",
+      "latest_price": 117.32,
+      "market_cap_millions": 469000,
+      "name": "Exxon Mobil Corporation",
+      "net_margin": 0.091,
+      "price_return": 0.393,
+      "revenue": 292216,
+      "revenue_cagr_3y": 0.025,
+      "revenue_growth_yoy": 0.02,
+      "sector": "Energy",
+      "share_dilution": -0.029,
+      "ticker": "XOM"
+    }
+  ],
   "sources": [
     {
       "name": "Yahoo Finance via yfinance",

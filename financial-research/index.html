@@ -25,6 +25,7 @@
         <div class="source-stack" aria-label="Data sources">
           <span>yfinance-ready</span>
           <span>SEC CompanyFacts-ready</span>
+          <span>edgartools-ready</span>
           <span>SQLite cache</span>
         </div>
       </aside>
@@ -39,12 +40,40 @@
           <div class="compare-control">
             <label class="control-label" for="compare-select">Compare</label>
             <select id="compare-select"></select>
+            <a class="download-link" href="downloads/financial-research-sample.xlsx">Download Excel</a>
           </div>
         </header>
 
         <div id="demo-notice" class="demo-notice" role="status"></div>
 
         <section id="metric-grid" class="metric-grid" aria-label="Key metrics"></section>
+
+        <section class="panel table-panel" aria-label="Issue screener">
+          <div class="panel-head">
+            <div>
+              <p class="kicker">Screener</p>
+              <h3>Issues and metrics</h3>
+            </div>
+            <div class="filter-row">
+              <label class="control-label" for="sector-filter">Sector</label>
+              <select id="sector-filter"></select>
+              <label class="control-label" for="screener-sort">Sort</label>
+              <select id="screener-sort">
+                <option value="issue_count">Issue count</option>
+                <option value="revenue_growth_yoy">Revenue growth</option>
+                <option value="fcf_yield">FCF yield</option>
+                <option value="debt_to_assets">Debt / assets</option>
+                <option value="price_return">Price return</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="screener-table">
+              <thead id="screener-head"></thead>
+              <tbody id="screener-body"></tbody>
+            </table>
+          </div>
+        </section>
 
         <section class="panel chart-panel" aria-label="Metric chart">
           <div class="panel-head">
@@ -86,6 +115,21 @@
           </section>
         </section>
 
+        <section class="panel table-panel" aria-label="SEC concept explorer">
+          <div class="panel-head">
+            <div>
+              <p class="kicker">SEC concepts</p>
+              <h3 id="concept-title">CompanyFacts inventory</h3>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead id="concept-head"></thead>
+              <tbody id="concept-body"></tbody>
+            </table>
+          </div>
+        </section>
+
         <section class="panel table-panel" aria-label="Fundamentals table">
           <div class="panel-head">
             <div>
@@ -114,4 +158,3 @@
     <script src="app.js" type="module"></script>
   </body>
 </html>
-

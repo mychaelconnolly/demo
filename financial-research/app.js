@@ -5,6 +5,8 @@ const state = {
   compareTicker: "MSFT",
   frequency: "annual",
   chartMetric: "revenue",
+  sectorFilter: "all",
+  screenerSort: "issue_count",
   search: "",
 };
 
@@ -20,6 +22,17 @@ const metricLabels = {
   diluted_shares: "Diluted shares",
   gross_margin: "Gross margin",
   close: "Price",
+  revenue_growth_yoy: "Revenue YoY",
+  revenue_cagr_3y: "Revenue CAGR",
+  net_margin: "Net margin",
+  fcf_margin: "FCF margin",
+  debt_to_assets: "Debt / assets",
+  debt_to_equity: "Debt / equity",
+  current_ratio: "Current ratio",
+  share_dilution: "Share dilution",
+  price_return: "Price return",
+  fcf_yield: "FCF yield",
+  issue_count: "Issues",
 };
 
 const tableMetrics = [
@@ -69,9 +82,11 @@ function formatPercent(value) {
 }
 
 function formatMetric(metric, value) {
-  if (metric === "gross_margin") return formatPercent(value);
+  if (metric === "gross_margin" || metric.includes("margin") || metric.includes("growth") || metric.includes("cagr") || metric.includes("yield") || metric.includes("return") || metric === "debt_to_assets" || metric === "debt_to_equity" || metric === "share_dilution") return formatPercent(value);
   if (metric === "diluted_shares") return `${formatNumber(value)}M`;
-  if (metric === "close") return `$${Number(value).toFixed(2)}`;
+  if (metric === "close") return typeof value === "number" ? `$${value.toFixed(2)}` : "-";
+  if (metric === "issue_count") return formatNumber(value);
+  if (metric === "current_ratio") return typeof value === "number" ? value.toFixed(2) : "-";
   return formatMoneyMillions(value);
 }
 
@@ -148,7 +163,68 @@ function renderMetrics() {
     metricCard("Revenue", formatMoneyMillions(latest.revenue), "Latest annual period"),
     metricCard("Net margin", formatPercent(company.metrics.net_margin), "Net income / revenue"),
     metricCard("Free cash flow", formatMoneyMillions(latest.free_cash_flow), "Operating cash flow less capex"),
-    metricCard("Debt / assets", formatPercent(company.metrics.debt_to_assets), "Filed balance sheet ratio")
+    metricCard("Issue count", formatNumber(company.issue_count || 0), (company.issue_flags || ["No current flags."]).slice(0, 2).join("; "))
+  );
+}
+
+function renderScreenerControls() {
+  const sectors = ["all", ...new Set(state.companies.map((company) => company.sector).filter(Boolean))].sort();
+  $("#sector-filter").replaceChildren(
+    ...sectors.map((sector) => {
+      const option = document.createElement("option");
+      option.value = sector;
+      option.textContent = sector === "all" ? "All sectors" : sector;
+      option.selected = sector === state.sectorFilter;
+      return option;
+    })
+  );
+  $("#screener-sort").value = state.screenerSort;
+}
+
+function screenerRows() {
+  const rows = [...(state.dataset.screener || [])].filter((row) => {
+    return state.sectorFilter === "all" || row.sector === state.sectorFilter;
+  });
+  rows.sort((a, b) => {
+    const key = state.screenerSort;
+    const av = typeof a[key] === "number" ? a[key] : -Infinity;
+    const bv = typeof b[key] === "number" ? b[key] : -Infinity;
+    return bv - av;
+  });
+  return rows;
+}
+
+function renderScreener() {
+  renderScreenerControls();
+  const headers = ["ticker", "sector", "issue_count", "revenue_growth_yoy", "revenue_cagr_3y", "net_margin", "fcf_yield", "debt_to_assets", "price_return", "issue_flags"];
+  $("#screener-head").innerHTML = `
+    <tr>
+      ${headers.map((header) => `<th>${metricLabels[header] || header.replaceAll("_", " ")}</th>`).join("")}
+    </tr>
+  `;
+  $("#screener-body").replaceChildren(
+    ...screenerRows().map((row) => {
+      const tr = document.createElement("tr");
+      tr.tabIndex = 0;
+      tr.dataset.ticker = row.ticker;
+      tr.innerHTML = headers
+        .map((header) => {
+          const value = header === "ticker" || header === "sector" || header === "issue_flags" ? row[header] : formatMetric(header, row[header]);
+          return `<td>${value || "-"}</td>`;
+        })
+        .join("");
+      tr.addEventListener("click", () => {
+        state.selectedTicker = row.ticker;
+        if (state.compareTicker === row.ticker) {
+          state.compareTicker = state.companies.find((item) => item.ticker !== row.ticker)?.ticker || row.ticker;
+        }
+        render();
+      });
+      tr.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") tr.click();
+      });
+      return tr;
+    })
   );
 }
 
@@ -295,6 +371,25 @@ function renderQuality() {
   );
 }
 
+function renderConcepts() {
+  const company = currentCompany();
+  const rows = company.sec_concepts || [];
+  const headers = ["metric", "concept", "unit", "forms", "period_count", "latest_filed_at", "source"];
+  $("#concept-title").textContent = `${company.ticker} CompanyFacts inventory`;
+  $("#concept-head").innerHTML = `
+    <tr>
+      ${headers.map((header) => `<th>${header.replaceAll("_", " ")}</th>`).join("")}
+    </tr>
+  `;
+  $("#concept-body").replaceChildren(
+    ...rows.map((row) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = headers.map((header) => `<td>${row[header] ?? "-"}</td>`).join("");
+      return tr;
+    })
+  );
+}
+
 function renderTable() {
   const company = currentCompany();
   const rows = company[state.frequency] || [];
@@ -321,9 +416,11 @@ function render() {
   renderUniverse();
   renderHeader();
   renderMetrics();
+  renderScreener();
   renderChart();
   renderCompare();
   renderQuality();
+  renderConcepts();
   renderTable();
 }
 
@@ -342,6 +439,16 @@ async function init() {
   $("#compare-select").addEventListener("change", (event) => {
     state.compareTicker = event.target.value;
     render();
+  });
+
+  $("#sector-filter").addEventListener("change", (event) => {
+    state.sectorFilter = event.target.value;
+    renderScreener();
+  });
+
+  $("#screener-sort").addEventListener("change", (event) => {
+    state.screenerSort = event.target.value;
+    renderScreener();
   });
 
   document.querySelectorAll("[data-frequency]").forEach((button) => {
@@ -364,4 +471,3 @@ async function init() {
 init().catch((error) => {
   document.body.innerHTML = `<main class="workspace"><div class="demo-notice">Failed to load demo data: ${error.message}</div></main>`;
 });
-
